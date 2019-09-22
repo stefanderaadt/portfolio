@@ -1,0 +1,27 @@
+.divider {
+    width: 100%;
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 10rem);
+        width: 20rem;
+        height: 20rem;
+        z-index: 10;
+
+        line {
+            fill: none;
+            stroke-width: 1px;
+            stroke-linecap: round;
+            stroke: $orange;
+        }
+    }
+
+    &.divider-half-height {
+        height: 10rem;
+    }
+
+    &.divider-full-height {
+        height: 20rem;
+    }
+}

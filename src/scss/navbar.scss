@@ -1,0 +1,33 @@
+.navbar {
+    .navbar-content {
+        margin: 0 auto;
+        position: relative;
+
+        @include from($desktop) {
+            max-width: 1344px;
+
+            .navbar-menu {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: $navbar-height;
+                width: 50%;
+                max-width: 1344px;
+            }
+        }
+
+        @include from($fullhd) {
+            .navbar-brand .navbar-item {
+                padding-left: 0;
+            }
+
+            .navbar-menu .navbar-item:last-child {
+                padding-right: 0;
+            }
+        }
+
+        img {
+            max-height: calc(#{$navbar-height} - 1rem);
+        }
+    }
+}

@@ -3,8 +3,11 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const helpers = require('./helpers');
 const isDev = process.env.NODE_ENV === 'development';
+
+console.log(helpers.root('public'));
 
 const webpackConfig = {
     entry: {
@@ -40,10 +43,18 @@ const webpackConfig = {
             {
                 test: /\.sass$/,
                 use: [isDev ? 'vue-style-loader' : MiniCSSExtractPlugin.loader, { loader: 'css-loader', options: { sourceMap: isDev } }, { loader: 'sass-loader', options: { sourceMap: isDev } }]
+            },
+            {
+                test: /\.woff(2)?(\?[a-z0-9]+)?$/,
+                loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+            },
+            {
+                test: /\.(png|svg|jpg|gif|eot|woff|ttf)(\?[a-z0-9]+)?$/,
+                use: ['file-loader']
             }
         ]
     },
-    plugins: [new VueLoaderPlugin(), new HtmlPlugin({ template: 'index.html', chunksSortMode: 'dependency' })]
+    plugins: [new VueLoaderPlugin(), new HtmlPlugin({ template: `public/index.html`, chunksSortMode: 'dependency' }), new CopyWebpackPlugin([{ from: 'public' }])]
 };
 
 module.exports = webpackConfig;

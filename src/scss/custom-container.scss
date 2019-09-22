@@ -1,0 +1,33 @@
+.custom-container {
+    margin-top: 0.75rem;
+    min-height: calc(100vh - #{$navbar-height});
+
+    $line-width: 4px;
+
+    &.line-left:after {
+        position: absolute;
+        bottom: -0.125rem;
+        left: calc(50% - 10rem);
+        top: -0.125rem;
+        content: '';
+        border-right: $line-width solid $orange;
+    }
+
+    &.line-right:after {
+        position: absolute;
+        bottom: -0.125rem;
+        left: calc(50% + 10rem - #{$line-width});
+        top: -0.125rem;
+        content: '';
+        border-left: $line-width solid $orange;
+    }
+
+    &.line-middle:after {
+        position: absolute;
+        bottom: -0.125rem;
+        left: calc(50% - #{$line-width} / 2);
+        top: -0.0675rem;
+        content: '';
+        border-left: $line-width solid $orange;
+    }
+}

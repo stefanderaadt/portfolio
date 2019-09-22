@@ -1,22 +1,18 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
+
+import '@fortawesome/fontawesome-free/js/all';
 
 import App from './components/App';
-import routes from './routes';
+import router from './router';
 
-Vue.use(VueRouter);
-
-const router = new VueRouter({
-    routes,
-    linkActiveClass: 'active',
-    mode: 'history'
-});
+import './scss/main.scss';
+import './plugins';
 
 const vm = new Vue({
     el: '#app',
     render: h => h(App),
     router,
     data: {
-        test: 'test1234'
+        todos: [{ id: 1, task: 'Niets doen' }, { id: 2, task: 'Wel iets doen?' }, { id: 3, task: 'Nee toch niet.' }]
     }
 });

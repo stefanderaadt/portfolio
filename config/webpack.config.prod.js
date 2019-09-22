@@ -10,6 +10,7 @@ const helpers = require('./helpers');
 const commonConfig = require('./webpack.config.common');
 const isProd = process.env.NODE_ENV === 'production';
 const environment = isProd ? require('./env/prod.env') : require('./env/staging.env');
+const assetPath = process.env.ASSET_PATH || '';
 
 const webpackConfig = merge(commonConfig, {
     mode: 'production',

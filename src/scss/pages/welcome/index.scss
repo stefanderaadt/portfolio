@@ -1,0 +1,176 @@
+.custom-container.welcome {
+    margin-top: $navbar-height;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+
+    &:after {
+        $width: 4px;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - (#{$width} / 2));
+        height: 4rem;
+        content: '';
+        border-right: $width solid $orange;
+    }
+
+    .welcome-container-wrapper {
+        z-index: 10;
+        position: absolute;
+        background: $blue;
+        height: 20rem;
+        width: 30rem;
+        top: calc(40% - 10rem);
+        left: calc(50% - 15rem);
+        padding: 0.5rem;
+        -moz-box-shadow: 0 0 5px #111;
+        -webkit-box-shadow: 0 0 5px #111;
+        box-shadow: 0 0 5px #111;
+
+        @include until($tablet) {
+            width: calc(100% - 1rem);
+            left: 0.5rem;
+        }
+
+        .welcome-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            &:after {
+                content: '';
+                border-top: 4px solid $orange;
+                border-left: 4px solid $orange;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 50%;
+                width: 50%;
+                transition: 0.5s;
+                animation: welcome 0.5s 1;
+            }
+
+            &:before {
+                content: '';
+                border-bottom: 4px solid $orange;
+                border-right: 4px solid $orange;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                height: 50%;
+                width: 50%;
+                transition: 0.5s;
+                animation: welcome 0.5s 1;
+            }
+
+            &:hover {
+                &:after,
+                &:before {
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+
+            @keyframes welcome {
+                0% {
+                    width: 10%;
+                    height: 10%;
+                }
+                100% {
+                    height: 50%;
+                    width: 50%;
+                }
+            }
+
+            .welcome-container-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+
+                .title {
+                    &.name {
+                        font-weight: bold;
+                    }
+
+                    &:first-child {
+                        margin-top: 1rem;
+                    }
+                }
+
+                @include until($tablet) {
+                    .title {
+                        &:first-child {
+                            margin-top: 1.75rem;
+                        }
+
+                        &.is-1 {
+                            font-size: 2.5rem;
+                        }
+
+                        &.is-2 {
+                            font-size: 2.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .meteor {
+        border: 2px solid transparent;
+        border-bottom: 60px solid #fff;
+        position: absolute;
+        transform-origin: top center;
+        opacity: 0;
+    }
+
+    .meteor:after {
+        content: '';
+        position: absolute;
+        top: 58px;
+        left: 50%;
+        height: 4px;
+        width: 4px;
+        border-radius: 100%;
+        background: #fff;
+        transform: translateX(-50%);
+        box-shadow: 0 0 15px 0 #fff;
+    }
+
+    .star {
+        display: inline-block;
+        border-radius: 100%;
+        background-color: $yellow;
+        position: fixed;
+        opacity: 0.5;
+    }
+
+    @keyframes shower {
+        0% {
+            transform: rotate(-30deg) scaleY(0);
+            opacity: 0;
+        }
+        65% {
+            transform: rotate(-30deg) scaleY(1);
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(-30deg) scaleY(1) translateY(500%);
+            opacity: 0;
+        }
+    }
+
+    .scrolldown-bar {
+        position: absolute;
+        height: 9rem;
+        width: 100%;
+        bottom: 0;
+
+        .icon-mouse {
+            color: $orange;
+            font-size: 4rem;
+        }
+    }
+}
