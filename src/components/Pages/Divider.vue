@@ -35,7 +35,7 @@ export default {
             };
         }
 
-        if (this.from === 'right' && this.to === 'middle') {
+        if (this.from === 'right' && this.to === 'center') {
             return {
                 x1: 100,
                 x2: 50,
@@ -45,7 +45,7 @@ export default {
             };
         }
 
-        if (this.from === 'left' && this.to === 'middle') {
+        if (this.from === 'left' && this.to === 'center') {
             return {
                 x1: 0,
                 x2: 50,
@@ -55,7 +55,7 @@ export default {
             };
         }
 
-        if (this.from === 'middle' && this.to === 'right') {
+        if (this.from === 'center' && this.to === 'right') {
             return {
                 x1: 50,
                 x2: 100,
@@ -65,7 +65,7 @@ export default {
             };
         }
 
-        if (this.from === 'middle' && this.to === 'left') {
+        if (this.from === 'center' && this.to === 'left') {
             return {
                 x1: 50,
                 x2: 0,

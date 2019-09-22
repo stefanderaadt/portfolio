@@ -1,5 +1,5 @@
 .custom-container {
-    margin-top: 0.75rem;
+    padding-top: 2rem;
     min-height: calc(100vh - #{$navbar-height});
 
     $line-width: 4px;
@@ -22,12 +22,18 @@
         border-left: $line-width solid $orange;
     }
 
-    &.line-middle:after {
+    &.line-center:after {
         position: absolute;
         bottom: -0.125rem;
         left: calc(50% - #{$line-width} / 2);
         top: -0.0675rem;
         content: '';
         border-left: $line-width solid $orange;
+    }
+
+    .custom-container-title {
+        z-index: 20;
+        background: $primary;
+        @include container-shadow;
     }
 }

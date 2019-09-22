@@ -1,0 +1,5 @@
+@mixin container-shadow {
+    -moz-box-shadow: 0 0 5px $grey-darker;
+    -webkit-box-shadow: 0 0 5px $grey-darker;
+    box-shadow: 0 0 5px $grey-darker;
+}

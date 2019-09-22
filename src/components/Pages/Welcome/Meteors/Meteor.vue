@@ -4,7 +4,7 @@
 
 <script>
 import { setTimeout } from 'timers';
-import random from '../../../helpers/random';
+import random from '../../../../helpers/random';
 
 export default {
     name: 'meteor',

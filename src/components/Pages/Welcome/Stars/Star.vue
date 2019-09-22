@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import random from '../../../helpers/random';
+import random from '../../../../helpers/random';
 
 export default {
     name: 'star',
