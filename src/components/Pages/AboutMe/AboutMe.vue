@@ -5,6 +5,9 @@
                 <h5 class="title is-3 hero-title">About me</h5>
             </div>
         </div>
+        <div class="columns">
+            <div class="column custom-container-content"></div>
+        </div>
     </div>
 </template>
 

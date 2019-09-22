@@ -1,2 +1,8 @@
 .custom-container.about-me {
+    .about-me-content {
+        @include container-shadow;
+        z-index: 20;
+        margin-top: 2rem;
+        background: $primary;
+    }
 }

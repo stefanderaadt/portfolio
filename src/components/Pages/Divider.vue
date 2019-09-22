@@ -3,7 +3,7 @@
         class="container divider"
         :class="[height === 'half' ? 'divider-half-height' : 'divider-full-height']"
     >
-        <svg viewBox="0 0 100 100">
+        <svg viewBox="0 0 200 200">
             <line :x1="x1" :x2="x2" :y1="y1" :y2="y2" />
         </svg>
     </div>
@@ -12,15 +12,14 @@
 <script>
 export default {
     name: 'divider',
-    components: {},
     props: ['from', 'to'],
     data: function() {
         if (this.from === 'right' && this.to === 'left') {
             return {
-                x1: 100,
+                x1: 200,
                 x2: 0,
                 y1: 0,
-                y2: 100,
+                y2: 200,
                 height: 'full'
             };
         }
@@ -28,19 +27,19 @@ export default {
         if (this.from === 'left' && this.to === 'right') {
             return {
                 x1: 0,
-                x2: 100,
+                x2: 200,
                 y1: 0,
-                y2: 100,
+                y2: 200,
                 height: 'full'
             };
         }
 
         if (this.from === 'right' && this.to === 'center') {
             return {
-                x1: 100,
-                x2: 50,
+                x1: 200,
+                x2: 100,
                 y1: 0,
-                y2: 50,
+                y2: 100,
                 height: 'half'
             };
         }
@@ -48,38 +47,38 @@ export default {
         if (this.from === 'left' && this.to === 'center') {
             return {
                 x1: 0,
-                x2: 50,
+                x2: 100,
                 y1: 0,
-                y2: 50,
+                y2: 100,
                 height: 'half'
             };
         }
 
         if (this.from === 'center' && this.to === 'right') {
             return {
-                x1: 50,
-                x2: 100,
+                x1: 100,
+                x2: 200,
                 y1: 0,
-                y2: 50,
+                y2: 100,
                 height: 'half'
             };
         }
 
         if (this.from === 'center' && this.to === 'left') {
             return {
-                x1: 50,
+                x1: 100,
                 x2: 0,
                 y1: 0,
-                y2: 50,
+                y2: 100,
                 height: 'half'
             };
         }
 
         return {
-            x1: 50,
+            x1: 100,
             x2: 0,
             y1: 0,
-            y2: 50,
+            y2: 100,
             height: 'half'
         };
     }

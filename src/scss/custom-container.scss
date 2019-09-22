@@ -1,8 +1,13 @@
 .custom-container {
-    padding-top: 2rem;
     min-height: calc(100vh - #{$navbar-height});
-
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     $line-width: 4px;
+
+    @include until($tablet) {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 
     &.line-left:after {
         position: absolute;
@@ -11,6 +16,7 @@
         top: -0.125rem;
         content: '';
         border-right: $line-width solid $orange;
+        z-index: -1;
     }
 
     &.line-right:after {
@@ -20,20 +26,39 @@
         top: -0.125rem;
         content: '';
         border-left: $line-width solid $orange;
+        z-index: -1;
     }
 
     &.line-center:after {
         position: absolute;
         bottom: -0.125rem;
         left: calc(50% - #{$line-width} / 2);
-        top: -0.0675rem;
+        top: 0;
         content: '';
         border-left: $line-width solid $orange;
+        z-index: -1;
     }
 
     .custom-container-title {
         z-index: 20;
         background: $primary;
         @include container-shadow;
+        height: 4rem;
+
+        .title {
+            line-height: 2.5rem;
+        }
+    }
+
+    .custom-container-content {
+        @include container-shadow;
+        z-index: 20;
+        margin-top: 2rem;
+        background: $primary;
+        min-height: calc(100vh - 10rem - #{$navbar-height});
+    }
+
+    .columns {
+        margin: 0;
     }
 }
