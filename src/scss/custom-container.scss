@@ -4,7 +4,7 @@
     padding-bottom: 2rem;
     $line-width: 4px;
 
-    @include until($tablet) {
+    @include until($desktop) {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
@@ -40,6 +40,7 @@
     }
 
     .custom-container-title {
+        position: relative;
         z-index: 20;
         background: $primary;
         @include container-shadow;
@@ -48,17 +49,43 @@
         .title {
             line-height: 2.5rem;
         }
+
+        .custom-container-title-icon {
+            vertical-align: middle;
+            display: inline-block;
+            font-size: 1.75rem;
+            margin-top: 0.125rem;
+            margin-left: 0.25rem;
+        }
+
+        .custom-container-title-divider {
+            vertical-align: middle;
+            display: inline-block;
+            border-bottom: 0.25rem solid $orange;
+            margin: 0 0.75rem;
+            width: 1rem;
+        }
+
+        .custom-container-title-text {
+            vertical-align: middle;
+            display: inline-block;
+        }
     }
 
-    .custom-container-content {
-        @include container-shadow;
-        z-index: 20;
-        margin-top: 2rem;
-        background: $primary;
-        min-height: calc(100vh - 10rem - #{$navbar-height});
-    }
+    .custom-container-columns {
+        .custom-container-columns-content {
+            background: $primary;
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+            margin-top: 0.5rem;
 
-    .columns {
-        margin: 0;
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }

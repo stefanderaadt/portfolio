@@ -1,0 +1,70 @@
+.time-table {
+    width: 100%;
+
+    .row {
+        line-height: 3rem;
+
+        .left-col,
+        .right-col {
+            position: relative;
+            width: 47.5%;
+            overflow: auto;
+
+            &.active {
+                height: 1px;
+            }
+        }
+
+        .left-col {
+            text-align: left;
+        }
+
+        .right-col {
+            text-align: right;
+        }
+
+        .middle-col {
+            position: relative;
+            width: 5%;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0 1.5rem;
+
+            .left-stripe,
+            .right-stripe {
+                position: absolute;
+                background: $orange;
+                width: 0.25rem;
+                height: 0.25rem;
+                border-radius: 100%;
+                top: calc(50% - 0.125rem);
+            }
+
+            .left-stripe {
+                left: 0.6rem;
+            }
+
+            .right-stripe {
+                right: 0.6rem;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                border-left: 2px solid $orange;
+                top: 0;
+                bottom: calc(50% + 0.75rem);
+                left: 50%;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                border-left: 2px solid $orange;
+                top: calc(50% + 0.75rem);
+                bottom: 0;
+                left: 50%;
+            }
+        }
+    }
+}

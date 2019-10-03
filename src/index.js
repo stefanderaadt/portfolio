@@ -1,6 +1,7 @@
 import Vue from 'vue';
 
 import '@fortawesome/fontawesome-free/js/all';
+import 'es6-promise/auto';
 
 import App from './components/App';
 import router from './router';
@@ -11,8 +12,5 @@ import './plugins';
 const vm = new Vue({
     el: '#app',
     render: h => h(App),
-    router,
-    data: {
-        todos: [{ id: 1, task: 'Niets doen' }, { id: 2, task: 'Wel iets doen?' }, { id: 3, task: 'Nee toch niet.' }]
-    }
+    router
 });
