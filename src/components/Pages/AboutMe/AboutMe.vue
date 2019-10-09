@@ -31,7 +31,8 @@
                         <img
                             class="about-me-image"
                             :title="language.name"
-                            :src="`img/${language.img}`"
+                            :alt="language.name"
+                            :src="language.src"
                         />
                     </div>
                 </div>
@@ -45,7 +46,8 @@
                         <img
                             class="about-me-image"
                             :title="framework.name"
-                            :src="`img/${framework.img}`"
+                            :alt="framework.name"
+                            :src="framework.src"
                         />
                     </div>
                 </div>

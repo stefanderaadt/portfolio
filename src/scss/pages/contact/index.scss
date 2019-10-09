@@ -2,4 +2,27 @@
     &.line-center:after {
         bottom: 5rem;
     }
+
+    .custom-container-content {
+        margin-top: 0.75rem;
+        padding: 20rem 0;
+        background: $primary;
+
+        .title {
+            text-align: center;
+
+            &:last-child {
+                margin-top: 1.5rem;
+            }
+        }
+
+        .contact-email {
+            text-align: center;
+            img {
+                width: 30rem;
+                max-width: 100%;
+                padding: 0 0.5rem;
+            }
+        }
+    }
 }

@@ -9,7 +9,7 @@
             :frameworks="frameworks"
         />
         <divider from="left" to="right" />
-        <projects />
+        <projects :projects="projects" />
         <divider from="right" to="center" />
         <contact />
     </div>
@@ -88,28 +88,78 @@ export default {
                 }
             ],
             languages: [
-                { img: 'languages/javascript_512.png', name: 'Javascript (ES6)' },
-                { img: 'languages/html_512.png', name: 'HTML5' },
-                { img: 'languages/css_512.png', name: 'CSS3' },
-                { img: 'languages/sass_512.png', name: 'SASS' },
-                { img: 'languages/java_512.png', name: 'Java' },
-                { img: 'languages/json_512.png', name: 'JSON' },
-                { img: 'languages/node_512.png', name: 'NODE.JS' },
-                { img: 'languages/php_512.png', name: 'PHP' },
-                { img: 'languages/ruby_512.png', name: 'Ruby' },
-                { img: 'languages/csharp_net_512.png', name: 'C# .Net' }
+                { src: 'img/languages/javascript_512.png', name: 'Javascript (ES6)' },
+                { src: 'img/languages/html_512.png', name: 'HTML5' },
+                { src: 'img/languages/css_512.png', name: 'CSS3' },
+                { src: 'img/languages/sass_512.png', name: 'SASS' },
+                { src: 'img/languages/java_512.png', name: 'Java' },
+                { src: 'img/languages/json_512.png', name: 'JSON' },
+                { src: 'img/languages/node_512.png', name: 'NODE.JS' },
+                { src: 'img/languages/php_512.png', name: 'PHP' },
+                { src: 'img/languages/ruby_512.png', name: 'Ruby' },
+                { src: 'img/languages/csharp_net_512.png', name: 'C# .Net' }
             ],
             frameworks: [
-                { img: 'frameworks/react_512.png', name: 'React.JS' },
-                { img: 'frameworks/vue_512.png', name: 'Vue.JS' },
-                { img: 'frameworks/docker_512.png', name: 'Docker' },
-                { img: 'frameworks/express_512.png', name: 'Express JS' },
-                { img: 'frameworks/laravel_512.png', name: 'Laravel' },
-                { img: 'frameworks/spring_512.png', name: 'Spring Framework' },
-                { img: 'frameworks/xamarin_512.png', name: 'Xamarin' },
-                { img: 'frameworks/bootstrap_512.png', name: 'Bootstrap' },
-                { img: 'frameworks/bulma_512.png', name: 'Bulma' },
-                { img: 'frameworks/ruby_on_rails_512.png', name: 'Ruby on Rails' }
+                { src: 'img/frameworks/react_512.png', name: 'React.JS' },
+                { src: 'img/frameworks/vue_512.png', name: 'Vue.JS' },
+                { src: 'img/frameworks/docker_512.png', name: 'Docker' },
+                { src: 'img/frameworks/express_512.png', name: 'Express JS' },
+                { src: 'img/frameworks/laravel_512.png', name: 'Laravel' },
+                { src: 'img/frameworks/spring_512.png', name: 'Spring Framework' },
+                { src: 'img/frameworks/xamarin_512.png', name: 'Xamarin' },
+                { src: 'img/frameworks/bootstrap_512.png', name: 'Bootstrap' },
+                { src: 'img/frameworks/bulma_512.png', name: 'Bulma' },
+                { src: 'img/frameworks/ruby_on_rails_512.png', name: 'Ruby on Rails' }
+            ],
+            projects: [
+                {
+                    name: 'RGS Analyzer/Mapper',
+                    techniques: ['Javascript ES6', 'Node.JS', 'React.JS'],
+                    for: 'Minox',
+                    images: [
+                        { src: 'img/projects/smartlocker/smartlockers.png', name: 'SmartLockers overview page' },
+                        { src: 'img/projects/smartlocker/caregivers.png', name: 'Caregivers overview page' },
+                        { src: 'img/projects/smartlocker/plannings.png', name: 'Planning page for each SmartLocker' }
+                    ],
+                    links: [{ name: 'minox.nl', url: 'https://minox.nl' }],
+                    description:
+                        'Lorem ipsum dolhendrerit. Donec d viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti.'
+                },
+                {
+                    name: 'Gamestudio 2.0',
+                    techniques: ['Javascript ES6', 'React.JS', 'Redux'],
+                    for: 'NTR',
+                    images: [
+                        { src: 'img/projects/smartlocker/smartlockers.png', name: 'SmartLockers overview page' },
+                        { src: 'img/projects/smartlocker/caregivers.png', name: 'Caregivers overview page' },
+                        { src: 'img/projects/smartlocker/plannings.png', name: 'Planning page for each SmartLocker' }
+                    ],
+                    links: [{ name: 'Gamestudio', url: 'https://gamestudio.hetklokhuis.nl/' }],
+                    description:
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis feugiat hendrerit. Donec dolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti.'
+                },
+                {
+                    name: 'SmartLocker',
+                    techniques: ['Java', 'Spring', 'React.JS', 'Redux'],
+                    for: 'Lumiad & Hogeschool Utrecht',
+                    images: [
+                        { src: 'img/projects/smartlocker/smartlockers.png', name: 'SmartLockers overview page' },
+                        { src: 'img/projects/smartlocker/caregivers.png', name: 'Caregivers overview page' },
+                        { src: 'img/projects/smartlocker/plannings.png', name: 'Planning page for each Caregiver' }
+                    ],
+                    links: [{ name: 'Github source', url: 'https://github.com/stefanderaadt/SmartLocker' }],
+                    description:
+                        'Lorem ipsum dolor sit ametolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti.'
+                },
+                {
+                    name: 'HomeReval',
+                    techniques: ['C# Mono', 'Unity', 'XBOX Kinect'],
+                    for: 'Hogeschool Utrecht',
+                    images: [{ src: 'img/projects/smartlocker/smartlockers.png', name: 'SmartLockers overview page' }],
+                    links: [{ name: 'Hogeschool Utrecht', url: 'https://hu.nl' }],
+                    description:
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis feugiat hendrerit. Donec dolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti.'
+                }
             ]
         };
     }

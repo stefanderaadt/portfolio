@@ -1,2 +1,137 @@
 .custom-container.projects {
+    .columns.project-items {
+        .column {
+            padding: 0 0.375rem;
+            padding-top: 0.75rem;
+
+            @include from($tablet) {
+                &:nth-child(odd) {
+                    padding-left: 0;
+                }
+
+                &:nth-child(even) {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        .project-item {
+            .project-item-content {
+                background: $primary;
+                padding: 0.75rem;
+                height: 100%;
+
+                .project-item-description-top {
+                    position: relative;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.375rem;
+                    margin-top: 0.375rem;
+
+                    &:before {
+                        $height: 2px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: $height;
+                        content: '';
+                        border-bottom: $height solid $orange;
+                    }
+
+                    .project-item-description-title,
+                    .project-item-description-companies {
+                        width: calc(50% - 0.1825rem);
+                        display: inline-block;
+                    }
+
+                    .project-item-description-companies {
+                        text-align: right;
+                        vertical-align: top;
+                    }
+
+                    @include until($tablet) {
+                        .project-item-description-title,
+                        .project-item-description-companies {
+                            width: 100%;
+                        }
+
+                        .project-item-description-title {
+                            margin-top: 0.25rem;
+                        }
+
+                        .project-item-description-companies {
+                            text-align: left;
+                            margin-left: -0.125rem;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+
+                .project-item-description-middle {
+                    position: relative;
+                    padding-top: 0.675rem;
+                    padding-bottom: 0.75rem;
+                    margin-bottom: 0.375rem;
+
+                    &:before {
+                        $height: 2px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: $height;
+                        content: '';
+                        border-bottom: $height solid $orange;
+                    }
+
+                    &:after {
+                        $height: 2px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: $height;
+                        content: '';
+                        border-bottom: $height solid $orange;
+                    }
+
+                    .project-item-description-links {
+                        width: calc(40% - 0.1825rem);
+                        display: inline-block;
+                    }
+
+                    .project-item-description-techniques {
+                        width: calc(60% - 0.1825rem);
+                        display: inline-block;
+                        text-align: right;
+
+                        .project-item-description-technique {
+                            margin-right: 0.25rem;
+                            padding: 0.125rem 0.25rem;
+                            background: $orange;
+                            border-radius: 1rem;
+                            white-space: nowrap;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    @include until($tablet) {
+                        .project-item-description-links,
+                        .project-item-description-techniques {
+                            width: 100%;
+                        }
+
+                        .project-item-description-techniques {
+                            text-align: left;
+                            margin-top: 0.375rem;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

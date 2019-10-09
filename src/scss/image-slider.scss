@@ -1,0 +1,40 @@
+.image-slider {
+    position: relative;
+    @include no-select;
+
+    .image-slider-icon {
+        position: absolute;
+        width: 4rem;
+        height: 100%;
+        top: 0;
+        cursor: pointer;
+        font-size: 4rem;
+        color: $grey;
+
+        &.image-slider-icon-left {
+            left: 0;
+            text-align: right;
+        }
+
+        &.image-slider-icon-right {
+            right: 0;
+            text-align: left;
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .image-slider-icon-container {
+            position: absolute;
+            top: calc(50% - 2rem);
+            height: 4rem;
+            width: 4rem;
+            text-align: center;
+
+            .icon {
+                line-height: 4rem;
+            }
+        }
+    }
+}
