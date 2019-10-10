@@ -32,9 +32,13 @@
         </div>
         <div class="columns custom-container-columns">
             <div class="column custom-container-columns-content">
-                <h5 class="title is-4">Ervaring met de volgende talen</h5>
+                <h5 class="title is-4">{{lang.aboutMe.languagesTitle}}</h5>
                 <div class="about-me-languages">
-                    <div v-for="(language, i) in languages" :key="i" class="about-me-item">
+                    <div
+                        v-for="(language, i) in lang.aboutMe.languages"
+                        :key="i"
+                        class="about-me-item"
+                    >
                         <img
                             class="about-me-image"
                             :title="language.name"
@@ -46,10 +50,14 @@
             </div>
         </div>
         <div class="columns custom-container-columns">
-            <div class="column custom-container-columns-content about-me-frameworks">
-                <h5 class="title is-4">Ervaring met de volgende frameworks/tools</h5>
-                <div class="about-me-languages">
-                    <div v-for="(framework, i) in frameworks" :key="i" class="about-me-item">
+            <div class="column custom-container-columns-content">
+                <h5 class="title is-4">{{lang.aboutMe.frameworksTitle}}</h5>
+                <div class="about-me-frameworks">
+                    <div
+                        v-for="(framework, i) in lang.aboutMe.frameworks"
+                        :key="i"
+                        class="about-me-item"
+                    >
                         <img
                             class="about-me-image"
                             :title="framework.name"

@@ -7,8 +7,6 @@ import './plugins';
 import App from './components/App';
 import store from './store';
 
-console.log(store.getters);
-
 import './scss/main.scss';
 
 const vm = new Vue({

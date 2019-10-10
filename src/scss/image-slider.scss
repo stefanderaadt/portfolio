@@ -1,74 +1,102 @@
 .image-slider {
-    position: relative;
     @include no-select;
+    @include container-shadow;
 
-    .image-slider-dots {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 75%;
+    background: $dark-blue;
+
+    .image-slider-content {
         position: absolute;
-        height: 1rem;
-        bottom: 0.5rem;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-        .image-slider-dot {
-            position: relative;
-            cursor: pointer;
-            width: 0.5rem;
-            height: 0.5rem;
-            padding: 0.5rem;
-            display: inline-block;
+        .image-slider-dots {
+            position: absolute;
+            height: 1rem;
+            bottom: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
 
-            &:before {
-                position: absolute;
-                content: '';
-                top: calc(50% - 0.25rem);
-                left: calc(50% - 0.25rem);
+            .image-slider-dot {
+                position: relative;
+                cursor: pointer;
                 width: 0.5rem;
                 height: 0.5rem;
-                background: $grey;
-                border-radius: 100%;
-            }
-
-            &.image-slider-dot-active {
+                padding: 0.5rem;
+                display: inline-block;
                 &:before {
-                    background: $orange;
+                    position: absolute;
+                    content: '';
+                    top: calc(50% - 0.25rem);
+                    left: calc(50% - 0.25rem);
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    background: $grey;
+                    border-radius: 100%;
+                }
+
+                &.image-slider-dot-active {
+                    &:before {
+                        background: $orange;
+                    }
                 }
             }
         }
-    }
 
-    .image-slider-icon {
-        position: absolute;
-        width: 4rem;
-        height: 100%;
-        top: 0;
-        cursor: pointer;
-        font-size: 4rem;
-        color: $grey;
-
-        &.image-slider-icon-left {
-            left: 0;
-            text-align: right;
-        }
-
-        &.image-slider-icon-right {
-            right: 0;
-            text-align: left;
-        }
-
-        &:hover {
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .image-slider-icon-container {
+        .image-slider-icon {
             position: absolute;
-            top: calc(50% - 2rem);
-            height: 4rem;
             width: 4rem;
-            text-align: center;
+            height: 100%;
+            top: 0;
+            cursor: pointer;
+            font-size: 4rem;
+            color: $grey;
+            z-index: 10;
 
-            .icon {
-                line-height: 4rem;
+            &.image-slider-icon-left {
+                left: 0;
+                text-align: right;
             }
+
+            &.image-slider-icon-right {
+                right: 0;
+                text-align: left;
+            }
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .image-slider-icon-container {
+                position: absolute;
+                top: calc(50% - 2rem);
+                height: 4rem;
+                width: 4rem;
+                text-align: center;
+
+                .icon {
+                    line-height: 4rem;
+                }
+            }
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
     }
 }

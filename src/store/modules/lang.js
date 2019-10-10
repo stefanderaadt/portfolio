@@ -1,7 +1,7 @@
 import lang from '../../lang';
 
 const state = {
-    lang: 'nl',
+    lang: 'en',
     content: lang
 };
 

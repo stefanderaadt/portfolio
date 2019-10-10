@@ -7,18 +7,18 @@
                 </div>
                 <div class="custom-container-title-divider" />
                 <div class="custom-container-title-text">
-                    <h5 class="title is-3 hero-title">Contact</h5>
+                    <h5 class="title is-3 hero-title">{{lang.contact.title}}</h5>
                 </div>
             </div>
         </div>
         <div class="columns">
             <div class="column custom-container-content">
                 <div class="contact-information">
-                    <div class="title is-4">Send me an email at:</div>
+                    <div class="title is-4">{{lang.contact.information}}</div>
                     <div class="contact-email">
                         <img src="img/email_address.png" />
                     </div>
-                    <div class="title is-5">for more information.</div>
+                    <div class="title is-5">{{lang.contact.information2}}</div>
                 </div>
             </div>
         </div>
@@ -26,8 +26,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
     name: 'contact',
-    components: {}
+    computed: {
+        ...mapGetters({ lang: 'lang/getContent' })
+    }
 };
 </script>

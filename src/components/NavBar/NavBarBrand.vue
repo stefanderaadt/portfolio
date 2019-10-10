@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-brand">
-        <a class="navbar-item" href="#" v-scroll-to="'#home'" v-on:click="closeMenu">
-            <img src="img/logo.png" />
+        <a class="navbar-item" v-scroll-to="'#home'" v-on:click="closeMenu">
+            <img src="img/logo.png" alt="Stefan de Raadt logo" />
         </a>
         <nav-bar-burger :menuOpen="menuOpen" @toggle-menu="toggleMenu" />
     </div>
