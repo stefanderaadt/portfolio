@@ -2,7 +2,6 @@
     <a
         class="navbar-item"
         v-bind:class="{'is-active': active}"
-        href="#"
         v-scroll-to="`#${scrollToElement}`"
         v-on:click="closeMenu"
     >{{name}}</a>

@@ -1,24 +1,28 @@
 .custom-container.projects {
     .columns.project-items {
-        .column {
+        .project-item {
+            @include container-shadow;
+            background: $primary;
+            margin-bottom: 0.75rem;
             padding: 0 0.375rem;
             padding-top: 0.75rem;
 
             @include from($tablet) {
+                width: calc(50% - 0.375rem);
+                margin-left: 0.375rem;
+                margin-right: 0.375rem;
+
                 &:nth-child(odd) {
-                    padding-left: 0;
+                    margin-left: 0;
                 }
 
                 &:nth-child(even) {
-                    padding-right: 0;
+                    margin-right: 0;
                 }
             }
-        }
 
-        .project-item {
             .project-item-content {
-                background: $primary;
-                padding: 0.75rem;
+                padding: 0.25rem;
                 height: 100%;
 
                 .project-item-description-top {

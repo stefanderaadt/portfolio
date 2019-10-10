@@ -114,20 +114,20 @@ export default {
             projects: [
                 {
                     name: 'RGS Analyzer/Mapper',
-                    techniques: ['Javascript ES6', 'Node.JS', 'React.JS'],
+                    techniques: ['Javascript', 'Node.JS', 'React.JS', 'Mobx'],
                     for: 'Minox',
                     images: [
                         { src: 'img/projects/smartlocker/smartlockers.png', name: 'SmartLockers overview page' },
                         { src: 'img/projects/smartlocker/caregivers.png', name: 'Caregivers overview page' },
                         { src: 'img/projects/smartlocker/plannings.png', name: 'Planning page for each SmartLocker' }
                     ],
-                    links: [{ name: 'minox.nl', url: 'https://minox.nl' }],
+                    links: [{ name: 'Nieuws bericht HU', url: 'https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering' }],
                     description:
                         'Lorem ipsum dolhendrerit. Donec d viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti.'
                 },
                 {
                     name: 'Gamestudio 2.0',
-                    techniques: ['Javascript ES6', 'React.JS', 'Redux'],
+                    techniques: ['Javascript', 'React.JS', 'Redux'],
                     for: 'NTR',
                     images: [
                         { src: 'img/projects/smartlocker/smartlockers.png', name: 'SmartLockers overview page' },

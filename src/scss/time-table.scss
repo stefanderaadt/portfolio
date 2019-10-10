@@ -1,5 +1,6 @@
 .time-table {
     width: 100%;
+    min-width: 30rem;
 
     .row {
         line-height: 3rem;
@@ -8,6 +9,7 @@
         .right-col {
             position: relative;
             width: 47.5%;
+            min-width: 13rem;
             overflow: auto;
 
             &.active {
@@ -25,10 +27,10 @@
 
         .middle-col {
             position: relative;
-            width: 5%;
             vertical-align: middle;
             text-align: center;
             padding: 0 1.5rem;
+            min-width: 4rem;
 
             .left-stripe,
             .right-stripe {

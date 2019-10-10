@@ -4,24 +4,33 @@
     }
 
     .custom-container-content {
-        margin-top: 0.75rem;
-        padding: 20rem 0;
+        height: calc(100vh - 11.25rem);
         background: $primary;
+        @include container-shadow;
+        position: relative;
 
-        .title {
-            text-align: center;
+        .contact-information {
+            width: calc(100% - 1.5rem);
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 
-            &:last-child {
-                margin-top: 1.5rem;
+            .title {
+                text-align: center;
+
+                &:last-child {
+                    margin-top: 1.5rem;
+                }
             }
-        }
 
-        .contact-email {
-            text-align: center;
-            img {
-                width: 30rem;
-                max-width: 100%;
-                padding: 0 0.5rem;
+            .contact-email {
+                text-align: center;
+                img {
+                    width: 30rem;
+                    max-width: 100%;
+                    padding: 0 0.5rem;
+                }
             }
         }
     }

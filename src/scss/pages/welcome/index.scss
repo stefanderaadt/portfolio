@@ -2,17 +2,15 @@
     margin-top: $navbar-height;
     text-align: center;
     position: relative;
-    overflow: hidden;
     max-width: 100%;
 
     &:after {
-        $width: 4px;
         position: absolute;
-        bottom: 0;
-        left: calc(50% - (#{$width} / 2));
-        height: 4rem;
+        bottom: -1.29rem;
+        left: calc(50% - 3px);
+        height: 5.375rem;
         content: '';
-        border-right: $width solid $orange;
+        border-right: 5px solid $orange;
     }
 
     .welcome-container-wrapper {
@@ -167,6 +165,7 @@
         bottom: 0;
 
         .icon-mouse {
+            cursor: pointer;
             color: $orange;
             font-size: 4rem;
         }

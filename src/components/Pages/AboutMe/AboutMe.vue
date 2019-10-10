@@ -14,13 +14,17 @@
         <div class="columns custom-container-columns">
             <div class="column custom-container-columns-content">
                 <h5 class="title is-4">Opleidingen</h5>
-                <time-table :data="educations" :component="educationComponent" />
+                <div class="about-me-educations">
+                    <time-table :data="educations" :component="educationComponent" />
+                </div>
             </div>
         </div>
         <div class="columns custom-container-columns">
             <div class="column custom-container-columns-content">
                 <h5 class="title is-4">Werkervaring</h5>
-                <time-table :data="workExperience" :component="workExperienceComponent" />
+                <div class="about-me-work-experiences">
+                    <time-table :data="workExperience" :component="workExperienceComponent" />
+                </div>
             </div>
         </div>
         <div class="columns custom-container-columns">

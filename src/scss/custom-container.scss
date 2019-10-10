@@ -1,19 +1,25 @@
 .custom-container {
     min-height: calc(100vh - #{$navbar-height});
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    $line-width: 4px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    $line-width: 5px;
 
     @include until($desktop) {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &.line-left:after {
         position: absolute;
-        bottom: -0.125rem;
+        bottom: -1.375rem;
         left: calc(50% - 10rem);
-        top: -0.125rem;
+        top: -1.375rem;
         content: '';
         border-right: $line-width solid $orange;
         z-index: -1;
@@ -21,9 +27,9 @@
 
     &.line-right:after {
         position: absolute;
-        bottom: -0.125rem;
+        bottom: -1.375rem;
         left: calc(50% + 10rem - #{$line-width});
-        top: -0.125rem;
+        top: -1.375rem;
         content: '';
         border-left: $line-width solid $orange;
         z-index: -1;
@@ -31,9 +37,9 @@
 
     &.line-center:after {
         position: absolute;
-        bottom: -0.125rem;
+        bottom: -1.375rem;
         left: calc(50% - #{$line-width} / 2);
-        top: 0;
+        top: -1.375rem;
         content: '';
         border-left: $line-width solid $orange;
         z-index: -1;
@@ -74,10 +80,10 @@
 
     .custom-container-columns {
         .custom-container-columns-content {
+            @include container-shadow;
             background: $primary;
             margin-left: 0.25rem;
             margin-right: 0.25rem;
-            margin-top: 0.5rem;
 
             &:first-child {
                 margin-left: 0;

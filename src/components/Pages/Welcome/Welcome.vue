@@ -13,7 +13,7 @@
         <meteors />
         <stars />
         <div class="scrolldown-bar">
-            <i class="icon-mouse" />
+            <i class="icon-mouse" v-scroll-to="'#about-me'" />
         </div>
     </div>
 </template>
