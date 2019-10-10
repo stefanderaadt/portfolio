@@ -1,10 +1,15 @@
 <template>
     <div class="image-slider">
-        <div
-            class="image-slider-icon image-slider-icon-left"
-            @click="previous"
-            v-if="this.index > 0"
-        >
+        <div class="image-slider-dots" v-if="size > 1">
+            <div
+                class="image-slider-dot"
+                v-for="i in size"
+                :key="i"
+                :class="{'image-slider-dot-active': i - 1===index}"
+                @click="select(i - 1)"
+            />
+        </div>
+        <div class="image-slider-icon image-slider-icon-left" @click="previous" v-if="index > 0">
             <div class="image-slider-icon-container">
                 <i class="icon icon-cheveron-left" />
             </div>
@@ -18,7 +23,7 @@
         <div
             class="image-slider-icon image-slider-icon-right"
             @click="next"
-            v-if="this.index < this.size - 1"
+            v-if="index < size - 1"
         >
             <div class="image-slider-icon-container">
                 <i class="icon icon-cheveron-right" />
@@ -43,6 +48,9 @@ export default {
         },
         previous: function() {
             if (this.index > 0) this.index -= 1;
+        },
+        select: function(i) {
+            this.index = i;
         }
     }
 };

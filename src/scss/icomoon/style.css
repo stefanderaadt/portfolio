@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?i01awv');
-  src:  url('fonts/icomoon.eot?i01awv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?i01awv') format('truetype'),
-    url('fonts/icomoon.woff?i01awv') format('woff'),
-    url('fonts/icomoon.svg?i01awv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?n7h68i');
+  src:  url('fonts/icomoon.eot?n7h68i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?n7h68i') format('truetype'),
+    url('fonts/icomoon.woff?n7h68i') format('woff'),
+    url('fonts/icomoon.svg?n7h68i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -63,6 +63,9 @@
 }
 .icon-share2:before {
   content: "\ea82";
+}
+.icon-mail:before {
+  content: "\ea83";
 }
 .icon-github:before {
   content: "\eab0";

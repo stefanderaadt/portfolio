@@ -6,7 +6,13 @@
         </div>
         <p>{{data.city}}</p>
         <p>{{data.duties && data.duties.join(', ')}}</p>
-        <p>{{data.techniques && data.techniques.join(', ')}}</p>
+        <div class="about-me-work-experience-techniques">
+            <span
+                class="about-me-work-experience-technique"
+                v-for="(technique, i) in data.techniques"
+                :key="i"
+            >{{technique}}</span>
+        </div>
     </div>
 </template>
 

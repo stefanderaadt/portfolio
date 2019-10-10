@@ -10,17 +10,17 @@
 <script>
 export default {
     name: 'nav-bar-item',
-    props: ['name', 'scrollToElement'],
+    props: ['name', 'scrollToElement', 'bottomMargin'],
     data() {
         return { active: false };
     },
     methods: {
         handleScroll(event) {
-            const scrollElement = document.getElementById(this.scrollToElement);
-            const scrollTop = scrollElement.getBoundingClientRect().top;
+            const element = document.getElementById(this.scrollToElement);
+            const scrollTop = element.getBoundingClientRect().top;
 
-            // Check if element is within viewport and top is not outside viewport
-            this.active = scrollTop >= 0 && scrollElement.offsetHeight - scrollTop > 0;
+            // Check if element is within viewport
+            this.active = scrollTop < window.innerHeight && scrollTop * -1 + window.innerHeight < element.clientHeight + this.bottomMargin;
         },
         closeMenu() {
             this.$emit('close-menu');

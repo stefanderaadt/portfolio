@@ -2,6 +2,40 @@
     position: relative;
     @include no-select;
 
+    .image-slider-dots {
+        position: absolute;
+        height: 1rem;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .image-slider-dot {
+            position: relative;
+            cursor: pointer;
+            width: 0.5rem;
+            height: 0.5rem;
+            padding: 0.5rem;
+            display: inline-block;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: calc(50% - 0.25rem);
+                left: calc(50% - 0.25rem);
+                width: 0.5rem;
+                height: 0.5rem;
+                background: $grey;
+                border-radius: 100%;
+            }
+
+            &.image-slider-dot-active {
+                &:before {
+                    background: $orange;
+                }
+            }
+        }
+    }
+
     .image-slider-icon {
         position: absolute;
         width: 4rem;

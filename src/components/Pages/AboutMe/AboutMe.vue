@@ -7,23 +7,26 @@
                 </div>
                 <div class="custom-container-title-divider" />
                 <div class="custom-container-title-text">
-                    <h5 class="title is-3 hero-title">Over mij</h5>
+                    <h5 class="title is-3 hero-title">{{lang.aboutMe.title}}</h5>
                 </div>
             </div>
         </div>
         <div class="columns custom-container-columns">
             <div class="column custom-container-columns-content">
-                <h5 class="title is-4">Opleidingen</h5>
+                <h5 class="title is-4">{{lang.aboutMe.educationsTitle}}</h5>
                 <div class="about-me-educations">
-                    <time-table :data="educations" :component="educationComponent" />
+                    <time-table :data="lang.aboutMe.educations" :component="educationComponent" />
                 </div>
             </div>
         </div>
         <div class="columns custom-container-columns">
             <div class="column custom-container-columns-content">
-                <h5 class="title is-4">Werkervaring</h5>
+                <h5 class="title is-4">{{lang.aboutMe.workExperienceTitle}}</h5>
                 <div class="about-me-work-experiences">
-                    <time-table :data="workExperience" :component="workExperienceComponent" />
+                    <time-table
+                        :data="lang.aboutMe.workExperience"
+                        :component="workExperienceComponent"
+                    />
                 </div>
             </div>
         </div>
@@ -61,6 +64,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 import TimeTable from './TimeTable';
 import Education from './Education';
 import WorkExperience from './WorkExperience';
@@ -74,6 +79,9 @@ export default {
             educationComponent: Education,
             workExperienceComponent: WorkExperience
         };
+    },
+    computed: {
+        ...mapGetters({ lang: 'lang/getContent' })
     }
 };
 </script>
