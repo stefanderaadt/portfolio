@@ -19,6 +19,7 @@
                 :bottomMargin="20"
                 @close-menu="closeMenu"
             />
+            <nav-bar-lang-picker @close-menu="closeMenu" />
         </div>
     </div>
 </template>
@@ -28,11 +29,13 @@
 import { mapGetters } from 'vuex';
 
 import NavBarItem from './NavBarItem';
+import NavBarLangPicker from './NavBarLangPicker';
 
 export default {
     name: 'nav-bar-menu',
     components: {
-        NavBarItem
+        NavBarItem,
+        NavBarLangPicker
     },
     props: ['menuOpen'],
     methods: {

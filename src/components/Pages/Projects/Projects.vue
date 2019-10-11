@@ -55,7 +55,9 @@
                                 >{{technique}}</span>
                             </div>
                         </div>
-                        <div class="project-item-description-text">{{project.description}}</div>
+                        <div class="project-item-description-text">
+                            <p v-for="(desc, i) in project.description" :key="i">{{desc}}</p>
+                        </div>
                     </div>
                 </div>
             </div>

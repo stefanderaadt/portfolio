@@ -16,20 +16,20 @@
         "educations": [
             {
                 "name": "Hogeschool Utrecht",
-                "description": "HBO-ICT Software & Information Engineering",
+                "description": "HBO-ICT Software & Information Engineering (4de jaars student)",
                 "city": "Utrecht",
                 "from": 2016,
                 "to": 2019
             },
             {
                 "name": "ROC A12",
-                "description": "MBO Niveau 4 Applicatieontwikkelaar",
+                "description": "MBO 4 applicatie ontwikkelaar",
                 "city": "Ede",
                 "from": 2013,
                 "to": 2016
             }
         ],
-        "workExperienceTitle": "Werkervaring",
+        "workExperienceTitle": "Werk ervaring",
         "workExperience": [
             {
                 "name": "Het Klokhuis (NTR)",
@@ -97,6 +97,7 @@
             { "src": "img/frameworks/express_512.png", "name": "Express JS" },
             { "src": "img/frameworks/laravel_512.png", "name": "Laravel" },
             { "src": "img/frameworks/spring_512.png", "name": "Spring Framework" },
+            { "src": "img/frameworks/unity_512.png", "name": "Unity" },
             { "src": "img/frameworks/xamarin_512.png", "name": "Xamarin" },
             { "src": "img/frameworks/bootstrap_512.png", "name": "Bootstrap" },
             { "src": "img/frameworks/bulma_512.png", "name": "Bulma" },
@@ -110,51 +111,65 @@
                 "name": "RGS Analyzer/Mapper",
                 "techniques": ["Javascript", "Node.JS", "React.JS", "Mobx"],
                 "for": "Minox",
-                "images": [
-                    { "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers overview page" },
-                    { "src": "img/projects/smartlocker/caregivers.png", "name": "Caregivers overview page" },
-                    { "src": "img/projects/smartlocker/plannings.png", "name": "Planning page for each SmartLocker" }
+                "images": [{ "src": "img/projects/rgs/rgs.png", "name": "RGS Analyzer/Mapper" }],
+                "links": [
+                    { "name": "Nieuws bericht HU", "url": "https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering" },
+                    { "name": "RGS Ready", "url": "https://www.minox.nl/rgs-ready/" }
                 ],
-                "links": [{ "name": "Nieuws bericht HU", "url": "https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering" }],
-                "description": "Lorem ipsum dolhendrerit. Donec d viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
-            },
-            {
-                "name": "Gamestudio 2.0",
-                "techniques": ["Javascript", "React.JS", "Redux"],
-                "for": "NTR",
-                "images": [
-                    { "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers overview page" },
-                    { "src": "img/projects/smartlocker/caregivers.png", "name": "Caregivers overview page" },
-                    { "src": "img/projects/smartlocker/plannings.png", "name": "Planning page for each SmartLocker" }
-                ],
-                "links": [{ "name": "Gamestudio", "url": "https://gamestudio.hetklokhuis.nl/" }],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis feugiat hendrerit. Donec dolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
+                "description": [
+                    "Deze opdracht is uitgewerkt bij Minox. Hierbij is een systeem gemaakt waarmee het mogelijk is om al bestaande grootboekrekeningen te koppelen aan RGS (Referentie GrootboekSchema). RGS is een lijst met codes en niveaus gemaakt door de overheid om boekhoudsystemen beter samen te laten werken.",
+                    "Bij deze opdracht heb ik de volgende onderdelen gemaakt: RGS Robot, RGS Mapper en de RGS Analyzer.",
+                    "Deze RGS codes worden op een slimme manier gekoppeld aan grootboekrekeningen via de RGS Robot. Deze robot kan verder suggesties geven op basis van eerder gemaakte mappings van codes. Dankzij deze mappings kan een accountant al snel een goed overzicht krijgen over een administratie, en zijn deze regels ook te delen tussen andere administraties.",
+                    "Dankzij deze opdracht heeft Minox als eerste het RGS Ready certificaat ontvangen. RGS Ready bewijst dat een softwarepakket RGS volledig ondersteunt."
+                ]
             },
             {
                 "name": "SmartLocker",
                 "techniques": ["Java", "Spring", "React.JS", "Redux"],
                 "for": "Lumiad & Hogeschool Utrecht",
                 "images": [
-                    { "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers overview page" },
-                    { "src": "img/projects/smartlocker/caregivers.png", "name": "Caregivers overview page" },
-                    { "src": "img/projects/smartlocker/plannings.png", "name": "Planning page for each Caregiver" }
+                    { "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers pagina" },
+                    { "src": "img/projects/smartlocker/caregivers.png", "name": "Verzorgers pagina" },
+                    { "src": "img/projects/smartlocker/plannings.png", "name": "Planning pagina per verzorger" }
                 ],
-                "links": [{ "name": "Github source", "url": "https://github.com/stefanderaadt/SmartLocker" }],
-                "description": "Lorem ipsum dolor sit ametolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
+                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/SmartLocker" }],
+                "description": [
+                    "Een project voor de Hogeschool Utrecht en Lumiad waarbij een slim sleutelkastje is ontwikkeld. Hierbij was het de bedoeling dat een verzorger met een pasje het kastje kon openmaken tijdens ingeplande uren. Deze check werd vervolgens aan de back-end kant uitgevoerd, en kon via de webapp worden ingeplant.",
+                    "Bij dit project heb ik samen met een medestudent de back-end en front-end container ontwikkelt in combinatie met Docker.",
+                    "De back-end container is gebouwd in Java Spring via een Hexagonale architectuur, door deze architectuur is het makkelijk om volledig nieuwe ports toe te voegen zoals bijvoorbeeld een Graphql of Soap endpoint. Verder is het door deze architectuur ook makkelijk om componenten zoals het ORM te switchen omdat alles wordt aangeroepen via adapters.",
+                    "De front-end container is gemaakt met React.js en Redux, zodat we op een duidelijke manier state management hadden over de gehele front-end applicatie.",
+                    "In de Github repository is de source code te vinden, verder staat hier ook informatie over hoe het volledige project te draaien is via Docker en Docker compose."
+                ]
             },
             {
                 "name": "HomeReval",
                 "techniques": ["C# Mono", "Unity", "XBOX Kinect"],
                 "for": "Hogeschool Utrecht",
-                "images": [{ "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers overview page" }],
-                "links": [{ "name": "Hogeschool Utrecht", "url": "https://hu.nl" }],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis feugiat hendrerit. Donec dolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
+                "images": [{ "src": "img/projects/homereval/banner.png", "name": "Banner" }, { "src": "img/projects/homereval/record_screen.png", "name": "Record screen in Unity with XBOX kinect" }],
+                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/HomeReval-Unity" }, { "name": "ProjectB", "url": "https://www.sogeti.nl/projectb" }],
+                "description": [
+                    "Dit project is uitgevoerd voor ProjectB: “ProjectB is dé wedstrijd tussen studententeams in het laatste of voorlaatste jaar van hun IT-studie. Studenten worden uitgedaagd om informatie technologie in te zetten om het leven van mensen met een beperking te ondersteunen of zelfs de kwaliteit van leven te verbeteren.” Sogeti. (2019, 5 juni).",
+                    "HomeReval is een product waarbij het mogelijk is om in samenwerking met een fysiotherapeut oefeningen op te nemen en deze vervolgens thuis uit te voeren. Hierbij krijgt de fysiotherapeut direct inzicht hoe vaak de oefeningen worden gedaan en hoe goed een patiënt de oefeningen uitvoert door middel van een score en opnames.",
+                    "Ik ben tijdens dit project vooral bezig geweest met de Unity applicatie en heb hierbij het algoritme ontwikkeld die oefeningen kan opnemen en vervolgens kan vergelijken met herhalingen van die oefening. De initiële oefening wordt opgeslagen op de server en kan dus overal worden beoefend.",
+                    "Inzicht voor de fysiotherapeut was mogelijk via een React webapp die de opnames weer kon geven en aangaf hoe vaak een patiënt de oefening had gedaan."
+                ]
+            },
+            {
+                "name": "Portfolio",
+                "techniques": ["Vue.js", "Vuex", "Sass", "Javascript"],
+                "images": [{ "src": "img/projects/portfolio/portfolio.png", "name": "Portfolio technieken" }],
+                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/portfolio" }],
+                "description": [
+                    "Ik vind het leuk om nieuwe technieken te ontdekken, om deze reden heb ik mijn portfolio gemaakt in Vue.js in combinatie met Vuex.",
+                    "De UI is verder gebouwd op Bulma met een eigen thema.",
+                    "Componenten zoals de ‘ImageSlider’ en ‘TimeTable’ heb ik zelf ontwikkeld."
+                ]
             }
         ]
     },
     "contact": {
         "title": "Contact",
-        "information": "Stuur mij een mail via:",
-        "information2": "voor meer informatie."
+        "information": "Vragen of suggesties? Stuur mij een e-mail via:",
+        "information2": "Ik zal zo snel mogelijk proberen te reageren!"
     }
 }

@@ -1,9 +1,10 @@
-import en from './en.json';
 import nl from './nl.json';
+import en from './en.json';
 
 const lang = {
+    nl,
     en,
-    nl
+    languages: ['nl', 'en']
 };
 
 export default lang;

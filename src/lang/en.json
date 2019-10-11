@@ -15,8 +15,8 @@
         "educationsTitle": "Education",
         "educations": [
             {
-                "name": "Hogeschool Utrecht",
-                "description": "HBO-ICT Software & Information Engineering",
+                "name": "HU University of Applied Sciences Utrecht",
+                "description": "HBO-ICT Software & Information Engineering (year 4 student)",
                 "city": "Utrecht",
                 "from": 2016,
                 "to": 2019
@@ -29,15 +29,14 @@
                 "to": 2016
             }
         ],
-        "workExperienceTitle": "Work Experience",
+        "workExperienceTitle": "Work experience",
         "workExperience": [
             {
                 "name": "Het Klokhuis (NTR)",
                 "city": "Hilversum",
                 "from": 2019,
                 "to": 2019,
-                "duties": ["Freelance ZZP Ontwikkelaar"],
-                "activities": ["Gamestudio"],
+                "duties": ["Freelance Software Developer"],
                 "techniques": ["React.JS", "Javascript ES6"]
             },
             {
@@ -45,12 +44,7 @@
                 "city": "Veenendaal",
                 "from": 2018,
                 "to": 2019,
-                "activities": [
-                    "Stageopdracht gemaakt waarbij het mogelijk is om bestaande grootboekrekeningen te koppelen aan RGS (Referentie Grootboek Schema) codes. Het probleem hiervoor was dat grootboekrekeningen nooit een standaard hadden en dus niet met elkaar gedeeld konden worden, ook was het niet mogelijk om deze grootboekrekeningen te gebruiken voor een standaard dashboard. RGS lost deze problemen op. Voor deze opdracht heb ik twee sterren ontvangen op mijn diploma. Deze opdracht is gemaakt met een Node.JS back-end en als front-end React.JS. Verder heb ik hierbij testen moeten schrijven in Selenium (UX) en Jest (Unit). Door deze opdracht heeft Minox als eerste een RGS-ready certificaat ontvangen (https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering).",
-                    "Nieuw login systeem gemaakt met een Load balancer zodat het mogelijk was om meerdere servers te hebben.",
-                    "Vervolg op de RGS opdracht waarbij ik ook een toepassing heb gemaakt voor deze opdracht. Dit was het RGS-analyzer dashboard waarbij een accountant makkelijk inzicht kan krijgen over een administratie. Dit overzicht is vervolgens te delen omdat alles is opgebouwd op basis van RGS codes (Denk aan excel formules)."
-                ],
-                "duties": ["Stagiar", "Software Ontwikkelaar"],
+                "duties": ["Intern", "Software Developer"],
                 "techniques": ["Node.JS", "React.JS", "Javascript ES6"]
             },
             {
@@ -58,11 +52,7 @@
                 "city": "Buren",
                 "from": 2016,
                 "to": 2018,
-                "duties": ["Stagiar", "Software Ontwikkelaar"],
-                "activities": [
-                    "Gewerkt met een onbekende taal PxPlus tijdens mijn stage en bijbaan. Hierdoor veel ervaring opgedaan hoe ik zelfstandig problemen kon oplossen, zonder de hulp van google/stackoverflow.",
-                    "Laatste jaar vooral veel gedaan met Laravel en React.JS voor verschillende web apps. Onder andere een Webshop, Agenda app en een Dashboard voor een douane bedrijf."
-                ],
+                "duties": ["Intern", "Software Developer"],
                 "techniques": ["PxPlus", "Laravel", "PHP"]
             },
             {
@@ -70,8 +60,7 @@
                 "city": "Veenendaal",
                 "from": 2015,
                 "to": 2015,
-                "duties": ["Stagiar"],
-                "activities": ["Eerste stage als software ontwikkelaar, vooral veel basis ervaring van dit vak. Vooral gewerkt met een PHP framework (Drupal) met JQuery/HTML5 en CSS3."],
+                "duties": ["Intern"],
                 "techniques": ["HTML", "CSS", "Javascript", "PHP", "Drupal", "Symfony", "JQuery"]
             }
         ],
@@ -97,6 +86,7 @@
             { "src": "img/frameworks/express_512.png", "name": "Express JS" },
             { "src": "img/frameworks/laravel_512.png", "name": "Laravel" },
             { "src": "img/frameworks/spring_512.png", "name": "Spring Framework" },
+            { "src": "img/frameworks/unity_512.png", "name": "Unity" },
             { "src": "img/frameworks/xamarin_512.png", "name": "Xamarin" },
             { "src": "img/frameworks/bootstrap_512.png", "name": "Bootstrap" },
             { "src": "img/frameworks/bulma_512.png", "name": "Bulma" },
@@ -110,45 +100,65 @@
                 "name": "RGS Analyzer/Mapper",
                 "techniques": ["Javascript", "Node.JS", "React.JS", "Mobx"],
                 "for": "Minox",
-                "images": [{ "src": "img/projects/rgs/rgs.png", "name": "RGS Analyzer/Mapper" }],
+                "images": [{ "src": "img/projects/rgs/rgs.png", "name": "RGS Analyzer" }],
                 "links": [
-                    { "name": "News message HU (Dutch)", "url": "https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering" },
+                    { "name": "News message HU", "url": "https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering" },
                     { "name": "RGS Ready", "url": "https://www.minox.nl/rgs-ready/" }
                 ],
-                "description": "Lorem ipsum dolhendrerit. Donec d viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
+                "description": [
+                    "This assignment has been developed at Minox. I have created a system that makes it possible to link existing general ledger accounts to RGS (reference general ledger scheme). RGS is a list of codes and levels created by the government to make it easier for accounting systems to connect to each other.",
+                    "For this assignment I made the following parts: RGS Robot, RGS Mapper and the RGS Analyzer.",
+                    "These RGS codes are cleverly linked to general ledger accounts with the RGS Robot. This robot can also give suggestions based on previously made mappings of codes. Thanks to these mappings, an accountant can quickly get a good overview of an administration, and these rules can also be shared between other administrations.",
+                    "Thanks to this assignment, Minox was the first company to receive the RGS Ready certificate. RGS Ready proves that a software package fully supports RGS."
+                ]
             },
             {
                 "name": "SmartLocker",
                 "techniques": ["Java", "Spring", "React.JS", "Redux"],
-                "for": "Lumiad & Hogeschool Utrecht",
+                "for": "HU University of Applied Sciences Utrecht & Lumiad",
                 "images": [
-                    { "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers overview page" },
-                    { "src": "img/projects/smartlocker/caregivers.png", "name": "Caregivers overview page" },
-                    { "src": "img/projects/smartlocker/plannings.png", "name": "Planning page for each Caregiver" }
+                    { "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers pagina" },
+                    { "src": "img/projects/smartlocker/caregivers.png", "name": "Verzorgers pagina" },
+                    { "src": "img/projects/smartlocker/plannings.png", "name": "Planning pagina per verzorger" }
                 ],
-                "links": [{ "name": "Github source", "url": "https://github.com/stefanderaadt/SmartLocker" }],
-                "description": "Lorem ipsum dolor sit ametolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
+                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/SmartLocker" }],
+                "description": [
+                    "A project for the HU University of Applied Sciences Utrecht and Lumiad in which a smart key cabinet has been developed. The idea was that a caregiver could open the locker with a card during scheduled hours. This check was then carried out on the back-end side, and could be planned in the web app.",
+                    "In this project, together with a fellow student, I developed the back-end and front-end container in combination with Docker.",
+                    "The back-end container was built in Java Spring using a Hexagonal architecture. This architecture makes it easy to add completely new ports, such as a Graphql or a Soap endpoint. Furthermore, this architecture also makes it easy to switch components such as the ORM because everything is called through adapters.",
+                    "The front-end container is made with React.js and Redux, so we had clear state management system over the entire front-end application.",
+                    "In the Github repository you can find our source code. On this repository there is also a guide available on how to run the project on your local machine."
+                ]
             },
             {
                 "name": "HomeReval",
                 "techniques": ["C# Mono", "Unity", "XBOX Kinect"],
-                "for": "Hogeschool Utrecht",
-                "images": [{ "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers overview page" }],
-                "links": [{ "name": "Hogeschool Utrecht", "url": "https://hu.nl" }],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis feugiat hendrerit. Donec dolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
+                "for": "HU University of Applied Sciences Utrecht",
+                "images": [{ "src": "img/projects/homereval/banner.png", "name": "Banner" }, { "src": "img/projects/homereval/record_screen.png", "name": "Record screen in Unity with XBOX kinect" }],
+                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/HomeReval-Unity" }, { "name": "ProjectB", "url": "https://www.sogeti.nl/projectb" }],
+                "description": [
+                    "This project was developed for ProjectB: “ProjectB is the competition between student teams in the last or penultimate year of their IT studies. Students are challenged to use information technology to support the lives of people with disabilities or even to improve their quality of life.” Sogeti. (2019, 5 June).",
+                    "HomeReval is a product in which it is possible to record exercises in collaboration with a physiotherapist and then perform them at home. This gives the physiotherapist immediate insight into how often the exercises are done and how well a patient performs the exercises by means of a score and recordings.",
+                    "During this project I was mainly involved with the Unity application and developed the algorithm that records exercises and then compares them with repetitions of that exercise. The initial exercise is stored on the server and can therefore be practiced anywhere.",
+                    "Insight for the physical therapist was possible via a React web app that could display the recordings and indicated how often a patient had done the exercise."
+                ]
             },
             {
                 "name": "Portfolio",
-                "techniques": ["Vue.js", "Vuex", "Javascript"],
-                "images": [{ "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers overview page" }],
-                "links": [{ "name": "Hogeschool Utrecht", "url": "https://hu.nl" }],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis feugiat hendrerit. Donec dolor nisi, lacinia non nulla id, imperdiet fringilla felis. Nullam porta faucibus erat, a pellentesque urna lacinia eleifend. Nunc viverra placerat dui a suscipit. Integer venenatis ultricies enim, vitae accumsan nunc mollis ac. Donec viverra mauris arcu, ac lacinia mauris semper at. Etiam dapibus vulputate nunc vitae pretium. In magna felis, tristique in ultrices sit amet, porttitor eu diam. Maecenas a nisi tellus. Aenean eget dapibus leo. Nulla facilisi. Curabitur blandit dolor mauris, vel eleifend diam sagittis in. Suspendisse potenti."
+                "techniques": ["Vue.js", "Vuex", "Sass", "Javascript"],
+                "images": [{ "src": "img/projects/portfolio/portfolio.png", "name": "Portfolio techniques" }],
+                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/portfolio" }],
+                "description": [
+                    "I like to discover new techniques, that's why I build my portfolio in Vue.js in combination with Vuex.",
+                    "The UI is built with Bulma, I have added my own theme over this css framework.",
+                    "I developed components like the 'ImageSlider' and 'TimeTable' myself."
+                ]
             }
         ]
     },
     "contact": {
         "title": "Contact",
-        "information": "Stuur mij een mail via:",
-        "information2": "voor meer informatie."
+        "information": "Questions or suggestions? Send me an email at:",
+        "information2": "I will respond as soon as possible!"
     }
 }
