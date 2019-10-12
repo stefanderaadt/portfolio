@@ -4,14 +4,20 @@
             <i class="icon icon-briefcase" />
             <h5 class="title is-5">{{data.name}}</h5>
         </div>
-        <p>{{data.city}}</p>
-        <p>{{data.duties && data.duties.join(', ')}}</p>
+        <div class="time-table-icon-line">
+            <p class="time-table-icon-line-text">{{data.city}}</p>
+            <i class="icon icon-location_city" />
+        </div>
+        <div class="time-table-icon-line">
+            <p class="time-table-icon-line-text">{{data.duties && data.duties.join(', ')}}</p>
+            <i class="icon icon-user" />
+        </div>
         <div class="about-me-work-experience-techniques">
-            <span
+            <div
                 class="about-me-work-experience-technique"
                 v-for="(technique, i) in data.techniques"
                 :key="i"
-            >{{technique}}</span>
+            >{{technique}}</div>
         </div>
     </div>
 </template>

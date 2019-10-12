@@ -32,29 +32,33 @@
 <script>
 export default {
     name: 'time-table',
-    components: {},
     props: ['data', 'component'],
-    data: function() {
-        const fromYear = Math.min.apply(
-            Math,
-            this.data.map(d => {
-                return d.from;
-            })
-        );
-        const toYear = Math.max.apply(
-            Math,
-            this.data.map(d => {
-                return d.to;
-            })
-        );
-
-        return {
-            fromYear,
-            toYear,
-            years: toYear - fromYear + 1,
-            left: this.data.filter((v, i) => !(i % 2)),
-            right: this.data.filter((v, i) => i % 2)
-        };
+    computed: {
+        fromYear: function() {
+            return Math.min.apply(
+                Math,
+                this.data.map(d => {
+                    return d.from;
+                })
+            );
+        },
+        toYear: function() {
+            return Math.max.apply(
+                Math,
+                this.data.map(d => {
+                    return d.to;
+                })
+            );
+        },
+        years: function() {
+            return this.toYear - this.fromYear + 1;
+        },
+        left: function() {
+            return this.data.filter((v, i) => !(i % 2));
+        },
+        right: function() {
+            return this.data.filter((v, i) => i % 2);
+        }
     },
     methods: {
         inFirstRange: ({ data, year }) => data.find(d => d.to === year),

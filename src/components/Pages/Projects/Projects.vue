@@ -27,7 +27,7 @@
                                 <h5 class="title is-4">{{project.name}}</h5>
                             </div>
                             <div class="project-item-description-companies" v-if="project.for">
-                                <i class="icon icon-account_balance" />
+                                <i class="icon icon-briefcase" />
                                 {{project.for}}
                             </div>
                         </div>

@@ -3,6 +3,18 @@
         bottom: 5rem;
     }
 
+    .custom-container-title-icon {
+        margin-top: 0.1875rem;
+    }
+
+    .custom-container-title-divider {
+        margin-top: -0.25rem;
+    }
+
+    .custom-container-title-text {
+        margin-top: -0.25rem;
+    }
+
     .custom-container-content {
         height: calc(100vh - 11.25rem);
         background: $primary;

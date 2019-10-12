@@ -32,4 +32,14 @@
             max-height: calc(#{$navbar-height} - 1rem);
         }
     }
+
+    @include desktop {
+        .navbar-item {
+            &.is-hoverable:hover {
+                .navbar-dropdown {
+                    display: block;
+                }
+            }
+        }
+    }
 }

@@ -1,11 +1,17 @@
 <template>
     <div class="about-me-education" :class="position">
         <div class="title-bar">
-            <i class="icon icon-book" />
+            <i class="icon icon-graduation-cap" />
             <h5 class="title is-5">{{data.name}}</h5>
         </div>
-        <p>{{data.description}}</p>
-        <p>{{data.city}}</p>
+        <div class="time-table-icon-line">
+            <p class="time-table-icon-line-text">{{data.description}}</p>
+            <i class="icon icon-book" />
+        </div>
+        <div class="time-table-icon-line">
+            <p class="time-table-icon-line-text">{{data.city}}</p>
+            <i class="icon icon-location_city" />
+        </div>
     </div>
 </template>
 

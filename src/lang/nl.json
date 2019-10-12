@@ -45,13 +45,8 @@
                 "city": "Veenendaal",
                 "from": 2018,
                 "to": 2019,
-                "activities": [
-                    "Stageopdracht gemaakt waarbij het mogelijk is om bestaande grootboekrekeningen te koppelen aan RGS (Referentie Grootboek Schema) codes. Het probleem hiervoor was dat grootboekrekeningen nooit een standaard hadden en dus niet met elkaar gedeeld konden worden, ook was het niet mogelijk om deze grootboekrekeningen te gebruiken voor een standaard dashboard. RGS lost deze problemen op. Voor deze opdracht heb ik twee sterren ontvangen op mijn diploma. Deze opdracht is gemaakt met een Node.JS back-end en als front-end React.JS. Verder heb ik hierbij testen moeten schrijven in Selenium (UX) en Jest (Unit). Door deze opdracht heeft Minox als eerste een RGS-ready certificaat ontvangen (https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering).",
-                    "Nieuw login systeem gemaakt met een Load balancer zodat het mogelijk was om meerdere servers te hebben.",
-                    "Vervolg op de RGS opdracht waarbij ik ook een toepassing heb gemaakt voor deze opdracht. Dit was het RGS-analyzer dashboard waarbij een accountant makkelijk inzicht kan krijgen over een administratie. Dit overzicht is vervolgens te delen omdat alles is opgebouwd op basis van RGS codes (Denk aan excel formules)."
-                ],
                 "duties": ["Stagiar", "Software Ontwikkelaar"],
-                "techniques": ["Node.JS", "React.JS", "Javascript ES6"]
+                "techniques": ["Node.JS", "Javascript ES6", "React.JS"]
             },
             {
                 "name": "Astecom Business Software",
@@ -59,10 +54,6 @@
                 "from": 2016,
                 "to": 2018,
                 "duties": ["Stagiar", "Software Ontwikkelaar"],
-                "activities": [
-                    "Gewerkt met een onbekende taal PxPlus tijdens mijn stage en bijbaan. Hierdoor veel ervaring opgedaan hoe ik zelfstandig problemen kon oplossen, zonder de hulp van google/stackoverflow.",
-                    "Laatste jaar vooral veel gedaan met Laravel en React.JS voor verschillende web apps. Onder andere een Webshop, Agenda app en een Dashboard voor een douane bedrijf."
-                ],
                 "techniques": ["PxPlus", "Laravel", "PHP"]
             },
             {
@@ -71,7 +62,6 @@
                 "from": 2015,
                 "to": 2015,
                 "duties": ["Stagiar"],
-                "activities": ["Eerste stage als software ontwikkelaar, vooral veel basis ervaring van dit vak. Vooral gewerkt met een PHP framework (Drupal) met JQuery/HTML5 en CSS3."],
                 "techniques": ["HTML", "CSS", "Javascript", "PHP", "Drupal", "Symfony", "JQuery"]
             }
         ],
@@ -134,7 +124,7 @@
                 ],
                 "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/SmartLocker" }],
                 "description": [
-                    "Een project voor de Hogeschool Utrecht en Lumiad waarbij een slim sleutelkastje is ontwikkeld. Hierbij was het de bedoeling dat een verzorger met een pasje het kastje kon openmaken tijdens ingeplande uren. Deze check werd vervolgens aan de back-end kant uitgevoerd, en kon via de webapp worden ingeplant.",
+                    "Een project voor de Hogeschool Utrecht en Lumiad waarbij een slim sleutelkastje is ontwikkeld. Hierbij was het de bedoeling dat een verzorger met een pasje het kastje kon openmaken tijdens ingeplande uren. Deze check werd vervolgens aan de back-end kant uitgevoerd, en kon via de webapp worden ingepland.",
                     "Bij dit project heb ik samen met een medestudent de back-end en front-end container ontwikkelt in combinatie met Docker.",
                     "De back-end container is gebouwd in Java Spring via een Hexagonale architectuur, door deze architectuur is het makkelijk om volledig nieuwe ports toe te voegen zoals bijvoorbeeld een Graphql of Soap endpoint. Verder is het door deze architectuur ook makkelijk om componenten zoals het ORM te switchen omdat alles wordt aangeroepen via adapters.",
                     "De front-end container is gemaakt met React.js en Redux, zodat we op een duidelijke manier state management hadden over de gehele front-end applicatie.",

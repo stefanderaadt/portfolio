@@ -7,69 +7,120 @@
 
         .about-me-education,
         .about-me-work-experience {
+            @include container-shadow;
+
             position: relative;
             line-height: 1.2rem;
-            padding: 0.5rem;
+            padding: 1rem;
 
             background: $light-blue;
-            @include container-shadow;
             height: calc(100% - 0.5rem);
             margin: 0.25rem;
 
             .title-bar {
+                position: relative;
                 padding-bottom: 0.5rem;
                 border-bottom: 2px solid $orange;
 
                 .title {
                     margin-bottom: 0;
                 }
-            }
-
-            &.left .title-bar {
-                .title {
-                    margin-left: 2rem;
-                }
 
                 .icon {
                     position: absolute;
                     font-size: 1rem;
-                    left: 0.375rem;
-                    top: 0.375rem;
+                    top: -0.125rem;
                 }
             }
 
-            &.right .title-bar {
-                .title {
-                    margin-right: 2rem;
-                }
+            .time-table-icon-line {
+                position: relative;
 
-                .icon {
-                    position: absolute;
-                    font-size: 1rem;
-                    right: 0.375rem;
-                    top: 0.375rem;
-                }
-            }
-
-            p {
                 margin: 0.5rem 0;
+
+                .time-table-icon-line-text {
+                    margin: 0;
+                }
+
+                .icon {
+                    position: absolute;
+                    font-size: 1rem;
+                    top: -0.25rem;
+                }
             }
 
-            .about-me-work-experience-techniques {
-                margin-top: 0.75rem;
-                margin-bottom: 0.25rem;
-                font-size: 0.875rem;
+            &.left {
+                .title-bar {
+                    .title {
+                        margin-left: 2rem;
+                    }
+
+                    .icon {
+                        left: 0;
+                    }
+                }
+
+                .time-table-icon-line {
+                    .time-table-icon-line-text {
+                        margin-left: 2rem;
+                    }
+
+                    .icon {
+                        left: 0;
+                    }
+                }
 
                 .about-me-work-experience-technique {
                     margin-right: 0.25rem;
-                    padding: 0.125rem 0.25rem;
-                    background: $orange;
-                    border-radius: 1rem;
-                    white-space: nowrap;
 
                     &:last-child {
                         margin-right: 0;
                     }
+                }
+            }
+
+            &.right {
+                .title-bar {
+                    .title {
+                        margin-right: 2rem;
+                    }
+
+                    .icon {
+                        right: 0;
+                    }
+                }
+
+                .time-table-icon-line {
+                    .time-table-icon-line-text {
+                        margin-right: 2rem;
+                    }
+
+                    .icon {
+                        right: 0;
+                    }
+                }
+
+                .about-me-work-experience-technique {
+                    margin-left: 0.25rem;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .about-me-work-experience-techniques {
+                margin-top: 0.5rem;
+                margin-bottom: 0.25rem;
+                font-size: 0.875rem;
+
+                .about-me-work-experience-technique {
+                    padding: 0.125rem 0.25rem;
+                    background: $orange;
+                    border-radius: 1rem;
+                    white-space: nowrap;
+                    display: inline-block;
+                    margin-top: 0.25rem;
                 }
             }
         }
