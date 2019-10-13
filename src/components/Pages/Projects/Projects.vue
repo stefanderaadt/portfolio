@@ -37,12 +37,13 @@
                                 v-if="project.links && project.links.length"
                             >
                                 <i class="icon icon-link" />
-                                <a
-                                    v-for="(link, i) in project.links"
-                                    :key="i"
-                                    :href="link.url"
-                                    target="_blank"
-                                >{{link.name}}</a>
+                                <span v-for="(link, i) in project.links" :key="i">
+                                    <a :href="link.url" target="_blank">{{link.name}}</a>
+                                    <span
+                                        v-if="project.links.length - 1 !== i"
+                                        class="project-item-description-link-comma"
+                                    >,</span>
+                                </span>
                             </div>
                             <div
                                 class="project-item-description-techniques"

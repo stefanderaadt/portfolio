@@ -16,7 +16,7 @@
                 <div class="contact-information">
                     <div class="title is-4">{{lang.contact.information}}</div>
                     <div class="contact-email">
-                        <img src="img/email_address.png" />
+                        <img src="img/stefanderaadt_email_address.png" />
                     </div>
                     <div class="title is-5">{{lang.contact.information2}}</div>
                 </div>

@@ -20,6 +20,7 @@
         background: $primary;
         @include container-shadow;
         position: relative;
+        overflow: hidden;
 
         .contact-information {
             width: calc(100% - 1.5rem);
