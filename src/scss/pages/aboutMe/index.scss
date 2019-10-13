@@ -8,13 +8,11 @@
         .about-me-education,
         .about-me-work-experience {
             @include container-shadow;
-
-            position: relative;
             line-height: 1.2rem;
             padding: 1rem;
-
             background: $light-blue;
             min-height: calc(100% - 0.5rem);
+            min-width: calc(100% - 0.5rem);
             margin: 0.25rem;
 
             .title-bar {

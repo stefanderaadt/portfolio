@@ -1,9 +1,15 @@
 .time-table {
+    display: table;
     width: 100%;
     min-width: 30rem;
 
     .row {
         line-height: 3rem;
+        height: 100%;
+
+        td {
+            height: 100%;
+        }
 
         .left-col,
         .right-col {
