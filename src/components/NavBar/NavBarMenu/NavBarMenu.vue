@@ -19,6 +19,7 @@
                 :bottomMargin="20"
                 @close-menu="closeMenu"
             />
+            <div class="navbar-divider" />
             <a class="navbar-item" :href="lang.nav.cv.pdf_url" target="_blank">{{lang.nav.cv.name}}</a>
             <nav-bar-lang-picker @close-menu="closeMenu" />
         </div>
