@@ -81,7 +81,6 @@ import WorkExperience from './WorkExperience';
 export default {
     name: 'about-me',
     components: { TimeTable, Education },
-    props: ['educations', 'workExperience', 'languages', 'frameworks'],
     data: function() {
         return {
             educationComponent: Education,

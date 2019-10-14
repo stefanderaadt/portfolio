@@ -2,7 +2,11 @@
     "nav": {
         "aboutMe": "Over mij",
         "projects": "Projecten",
-        "contact": "Contact"
+        "contact": "Contact",
+        "cv": {
+            "name": "Curriculum Vitae",
+            "pdf_url": "/pdf/cv_stefan_de_raadt_nl.pdf"
+        }
     },
     "welcome": {
         "title": "Hallo, mijn naam is",
@@ -45,7 +49,7 @@
                 "city": "Veenendaal",
                 "from": 2018,
                 "to": 2019,
-                "duties": ["Stagiar", "Software Ontwikkelaar"],
+                "duties": ["Stagiair", "Software Ontwikkelaar"],
                 "techniques": ["Node.JS", "Javascript ES6", "React.JS"]
             },
             {
@@ -53,7 +57,7 @@
                 "city": "Buren",
                 "from": 2016,
                 "to": 2018,
-                "duties": ["Stagiar", "Software Ontwikkelaar"],
+                "duties": ["Stagiair", "Software Ontwikkelaar"],
                 "techniques": ["PxPlus", "Laravel", "PHP"]
             },
             {
@@ -61,7 +65,7 @@
                 "city": "Veenendaal",
                 "from": 2015,
                 "to": 2015,
-                "duties": ["Stagiar"],
+                "duties": ["Stagiair"],
                 "techniques": ["HTML", "CSS", "Javascript", "PHP", "Drupal", "Symfony", "JQuery"]
             }
         ],
@@ -151,7 +155,7 @@
                 "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/portfolio" }],
                 "description": [
                     "Ik vind het leuk om nieuwe technieken te ontdekken, om deze reden heb ik mijn portfolio gemaakt in Vue.js in combinatie met Vuex.",
-                    "De UI is verder gebouwd op Bulma met een eigen thema.",
+                    "De User Interface is verder gebouwd op Bulma met een eigen thema.",
                     "Componenten zoals de ‘ImageSlider’ en ‘TimeTable’ heb ik zelf ontwikkeld."
                 ]
             }

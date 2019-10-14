@@ -72,7 +72,6 @@ import ImageSlider from './ImageSlider';
 
 export default {
     name: 'projects',
-    props: ['projects'],
     components: { ImageSlider },
     computed: {
         ...mapGetters({ lang: 'lang/getContent' })

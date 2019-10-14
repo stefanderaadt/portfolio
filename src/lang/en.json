@@ -2,7 +2,11 @@
     "nav": {
         "aboutMe": "About me",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "cv": {
+            "name": "Curriculum Vitae",
+            "pdf_url": "/pdf/cv_stefan_de_raadt_en.pdf"
+        }
     },
     "welcome": {
         "title": "Hello, my name is",
@@ -150,7 +154,7 @@
                 "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/portfolio" }],
                 "description": [
                     "I like to discover new techniques, that's why I build my portfolio in Vue.js in combination with Vuex.",
-                    "The UI is built with Bulma, I have added my own theme over this css framework.",
+                    "The User Interface is built with Bulma, I have added my own theme over this css framework.",
                     "I developed components like the 'ImageSlider' and 'TimeTable' myself."
                 ]
             }
