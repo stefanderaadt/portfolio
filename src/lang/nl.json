@@ -128,10 +128,10 @@
                 ],
                 "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/SmartLocker" }],
                 "description": [
-                    "Een project voor de Hogeschool Utrecht en Lumiad waarbij een slim sleutelkastje is ontwikkeld. Hierbij was het de bedoeling dat een verzorger met een pasje het kastje kon openmaken tijdens ingeplande uren. Deze check werd vervolgens aan de back-end kant uitgevoerd, en kon via de webapp worden ingepland.",
-                    "Bij dit project heb ik samen met een medestudent de back-end en front-end container ontwikkelt in combinatie met Docker.",
+                    "Een project voor de Hogeschool Utrecht en Lumiad waarbij een slim sleutelkastje is ontwikkeld. Bij dit kastje was het de bedoeling dat deze door een verzorger te openen was tijdens ingeplande uren. Deze check werd vervolgens aan de back-end kant uitgevoerd, en kon via de webapp worden ingepland.",
+                    "Bij dit project heb ik samen met een medestudent de back-end en front-end container ontwikkeld in combinatie met Docker.",
                     "De back-end container is gebouwd in Java Spring via een Hexagonale architectuur, door deze architectuur is het makkelijk om volledig nieuwe ports toe te voegen zoals bijvoorbeeld een Graphql of Soap endpoint. Verder is het door deze architectuur ook makkelijk om componenten zoals het ORM te switchen omdat alles wordt aangeroepen via adapters.",
-                    "De front-end container is gemaakt met React.js en Redux, zodat we op een duidelijke manier state management hadden over de gehele front-end applicatie.",
+                    "De front-end container is gemaakt met React.js en Redux, zodat we op een duidelijke manier state management was over de gehele front-end applicatie.",
                     "In de Github repository is de source code te vinden, verder staat hier ook informatie over hoe het volledige project te draaien is via Docker en Docker compose."
                 ]
             },
@@ -155,7 +155,7 @@
                 "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/portfolio" }],
                 "description": [
                     "Ik vind het leuk om nieuwe technieken te ontdekken, om deze reden heb ik mijn portfolio gemaakt in Vue.js in combinatie met Vuex.",
-                    "De User Interface is verder gebouwd op Bulma met een eigen thema.",
+                    "De User Interface is verder gebouwd op Bulma met een eigen thema in Sass.",
                     "Componenten zoals de ‘ImageSlider’ en ‘TimeTable’ heb ik zelf ontwikkeld."
                 ]
             }
