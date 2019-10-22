@@ -7,8 +7,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const helpers = require('./helpers');
 const isDev = process.env.NODE_ENV === 'development';
 
-console.log(helpers.root('public'));
-
 const webpackConfig = {
     entry: {
         index: helpers.root('src', 'index')
