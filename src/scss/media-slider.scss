@@ -1,4 +1,4 @@
-.image-slider {
+.media-slider {
     @include no-select;
     @include container-shadow;
 
@@ -8,14 +8,14 @@
     padding-bottom: 75%;
     background: $dark-blue;
 
-    .image-slider-content {
+    .media-slider-content {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
 
-        .image-slider-dots {
+        .media-slider-dots {
             position: absolute;
             height: 1rem;
             bottom: 0.5rem;
@@ -23,7 +23,7 @@
             transform: translateX(-50%);
             z-index: 10;
 
-            .image-slider-dot {
+            .media-slider-dot {
                 position: relative;
                 cursor: pointer;
                 width: 0.5rem;
@@ -41,7 +41,7 @@
                     border-radius: 100%;
                 }
 
-                &.image-slider-dot-active {
+                &.media-slider-dot-active {
                     &:before {
                         background: $orange;
                     }
@@ -49,7 +49,7 @@
             }
         }
 
-        .image-slider-icon {
+        .media-slider-icon {
             position: absolute;
             width: 4rem;
             height: 100%;
@@ -59,12 +59,12 @@
             color: $grey;
             z-index: 10;
 
-            &.image-slider-icon-left {
+            &.media-slider-icon-left {
                 left: 0;
                 text-align: right;
             }
 
-            &.image-slider-icon-right {
+            &.media-slider-icon-right {
                 right: 0;
                 text-align: left;
             }
@@ -73,7 +73,7 @@
                 background: rgba(0, 0, 0, 0.3);
             }
 
-            .image-slider-icon-container {
+            .media-slider-icon-container {
                 position: absolute;
                 top: calc(50% - 2rem);
                 height: 4rem;
@@ -86,7 +86,7 @@
             }
         }
 
-        img {
+        .media-slider-image {
             max-width: 100%;
             max-height: 100%;
             width: auto;
@@ -97,6 +97,11 @@
             left: 0;
             right: 0;
             margin: auto;
+        }
+
+        .media-slider-youtube {
+            width: 100%;
+            height: 100%;
         }
     }
 }

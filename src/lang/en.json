@@ -101,10 +101,22 @@
         "title": "Projects",
         "projects": [
             {
+                "name": "Klokhuis Game Studio",
+                "techniques": ["React.js", "Sass", "Javascript"],
+                "media": [{ "type": "youtube", "src": "https://www.youtube.com/embed/5UmI9Nwy274" }],
+                "links": [{ "name": "Klokhuis Game Studio", "url": "https://gamestudio.hetklokhuis.nl" }, { "name": "Gamekit", "url": "https://gamestudio.hetklokhuis.nl/maak" }],
+                "description": [
+                    "For a Dutch TV program I have been working on the ‘Klokhuis Game Studio’ for the past few months.",
+                    "The Game Studio is a web app that makes it possible for children to build their own games and then share them with each other. It is possible to build very simple to very advanced games with the Game Studio.",
+                    "I mainly worked on the project structure of the Gamekit and the React components that allow the user to set up game objects.",
+                    "At this moment this project is live and the Games Studio is playable on the link above!"
+                ]
+            },
+            {
                 "name": "RGS Analyzer/Mapper",
                 "techniques": ["Javascript", "Node.JS", "React.JS", "Mobx"],
                 "for": "Minox",
-                "images": [{ "src": "img/projects/rgs/rgs.png", "name": "RGS Analyzer" }],
+                "media": [{ "type": "image", "src": "img/projects/rgs/rgs.png", "name": "RGS Analyzer" }],
                 "links": [
                     { "name": "News message HU", "url": "https://www.hu.nl/student-hu-helpt-bedrijf-tijdens-stage-aan-belangrijke-certificering" },
                     { "name": "RGS Ready", "url": "https://www.minox.nl/rgs-ready/" }
@@ -120,10 +132,10 @@
                 "name": "SmartLocker",
                 "techniques": ["Java", "Spring", "React.JS", "Redux"],
                 "for": "HU University of Applied Sciences Utrecht & Lumiad",
-                "images": [
-                    { "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers pagina" },
-                    { "src": "img/projects/smartlocker/caregivers.png", "name": "Verzorgers pagina" },
-                    { "src": "img/projects/smartlocker/plannings.png", "name": "Planning pagina per verzorger" }
+                "media": [
+                    { "type": "image", "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers pagina" },
+                    { "type": "image", "src": "img/projects/smartlocker/caregivers.png", "name": "Verzorgers pagina" },
+                    { "type": "image", "src": "img/projects/smartlocker/plannings.png", "name": "Planning pagina per verzorger" }
                 ],
                 "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/SmartLocker" }],
                 "description": [
@@ -138,24 +150,16 @@
                 "name": "HomeReval",
                 "techniques": ["C# Mono", "Unity", "XBOX Kinect"],
                 "for": "HU University of Applied Sciences Utrecht",
-                "images": [{ "src": "img/projects/homereval/banner.png", "name": "Banner" }, { "src": "img/projects/homereval/record_screen.png", "name": "Record screen in Unity with XBOX kinect" }],
+                "media": [
+                    { "type": "image", "src": "img/projects/homereval/banner.png", "name": "Banner" },
+                    { "type": "image", "src": "img/projects/homereval/record_screen.png", "name": "Record screen in Unity with XBOX kinect" }
+                ],
                 "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/HomeReval-Unity" }, { "name": "ProjectB", "url": "https://www.sogeti.nl/projectb" }],
                 "description": [
                     "This project was developed for ProjectB: “ProjectB is the competition between student teams in the last or penultimate year of their IT studies. Students are challenged to use information technology to support the lives of people with disabilities or even to improve their quality of life.” Sogeti. (2019, 5 June).",
                     "HomeReval is a product in which it is possible to record exercises in collaboration with a physiotherapist and then perform them at home. This gives the physiotherapist immediate insight into how often the exercises are done and how well a patient performs the exercises by means of a score and recordings.",
                     "During this project I was mainly involved with the Unity application and developed the algorithm that records exercises and then compares them with repetitions of that exercise. The initial exercise is stored on the server and can therefore be practiced anywhere.",
                     "Insight for the physical therapist was possible via a React web app that could display the recordings and indicated how often a patient had done the exercise."
-                ]
-            },
-            {
-                "name": "Portfolio",
-                "techniques": ["Vue.js", "Vuex", "Sass", "Javascript"],
-                "images": [{ "src": "img/projects/portfolio/portfolio.png", "name": "Portfolio techniques" }],
-                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/portfolio" }],
-                "description": [
-                    "I like to discover new techniques, that's why I build my portfolio in Vue.js in combination with Vuex.",
-                    "The User Interface is built with Bulma, I have added my own theme over this css framework.",
-                    "I developed components like the 'ImageSlider' and 'TimeTable' myself."
                 ]
             }
         ]

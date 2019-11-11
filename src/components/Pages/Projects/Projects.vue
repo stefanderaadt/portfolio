@@ -19,7 +19,7 @@
             >
                 <div class="project-item-content">
                     <div class="project-item-slider">
-                        <image-slider :images="project.images" />
+                        <media-slider :media="project.media" />
                     </div>
                     <div class="project-item-description">
                         <div class="project-item-description-top">
@@ -68,11 +68,11 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import ImageSlider from './ImageSlider';
+import MediaSlider from './MediaSlider';
 
 export default {
     name: 'projects',
-    components: { ImageSlider },
+    components: { MediaSlider },
     computed: {
         ...mapGetters({ lang: 'lang/getContent' })
     }
