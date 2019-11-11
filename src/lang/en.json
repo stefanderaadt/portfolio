@@ -106,10 +106,10 @@
                 "media": [{ "type": "youtube", "src": "https://www.youtube.com/embed/5UmI9Nwy274" }],
                 "links": [{ "name": "Klokhuis Game Studio", "url": "https://gamestudio.hetklokhuis.nl" }, { "name": "Gamekit", "url": "https://gamestudio.hetklokhuis.nl/maak" }],
                 "description": [
-                    "For a Dutch TV program I have been working on the ‘Klokhuis Game Studio’ for the past few months.",
+                    "For a Dutch TV program I have been working on the 'Game Studio' for the past few months.",
                     "The Game Studio is a web app that makes it possible for children to build their own games and then share them with each other. It is possible to build very simple to very advanced games with the Game Studio.",
                     "I mainly worked on the project structure of the Gamekit and the React components that allow the user to set up game objects.",
-                    "At this moment this project is live and the Games Studio is playable on the link above!"
+                    "At this the Game Studio is playable with the link above!"
                 ]
             },
             {

@@ -107,10 +107,10 @@
                 "media": [{ "type": "youtube", "src": "https://www.youtube.com/embed/5UmI9Nwy274" }],
                 "links": [{ "name": "Klokhuis Game Studio", "url": "https://gamestudio.hetklokhuis.nl" }, { "name": "Gamekit", "url": "https://gamestudio.hetklokhuis.nl/maak" }],
                 "description": [
-                    "Voor de Het Klokhuis (NTR) ben ik de afgelopen maanden bezig geweest met het ‘gamekit’ gedeelte van de Klokhuis Game Studio.",
+                    "Voor de Het Klokhuis (NTR) ben ik de afgelopen maanden bezig geweest met het ‘gamekit’ gedeelte van de Game Studio.",
                     "De Game Studio is een web app waarmee het mogelijk is voor kinderen om zelf games te bouwen en deze vervolgens te delen met elkaar. Het is mogelijk om hele simpele tot hele advanced games te bouwen via de Game Studio.",
                     "Bij dit project heb ik vooral gewerkt aan de projectstructuur van de Gamekit en de React componenten waarmee de gebruiker game objecten kan instellen.",
-                    "Op dit moment staat dit project live en is de Game Studio speelbaar op de link hierboven!"
+                    "Op dit moment is de Game Studio speelbaar via de link hierboven!"
                 ]
             },
             {
