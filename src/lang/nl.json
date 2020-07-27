@@ -19,8 +19,8 @@
         "educationsTitle": "Opleidingen",
         "educations": [
             {
-                "name": "Hogeschool Utrecht",
-                "description": "HBO-ICT Software & Information Engineering (4de jaars student)",
+                "name": "Hogeschool Utrecht - Cum Laude",
+                "description": "HBO-ICT Software & Information Engineering",
                 "city": "Utrecht",
                 "from": 2016,
                 "to": 2019
@@ -35,6 +35,15 @@
         ],
         "workExperienceTitle": "Werk ervaring",
         "workExperience": [
+            {
+                "name": "Itho Daalderop",
+                "city": "Tiel",
+                "from": 2020,
+                "to": 2020,
+                "duties": ["Stagiar"],
+                "activities": ["Zonnepanelen en Zelfconsumptie Afstudeeropdracht"],
+                "techniques": ["React.JS", "Python", "Flask", "Docker", "scikit-learn"]
+            },
             {
                 "name": "Het Klokhuis (NTR)",
                 "city": "Hilversum",

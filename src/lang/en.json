@@ -19,11 +19,11 @@
         "educationsTitle": "Education",
         "educations": [
             {
-                "name": "HU University of Applied Sciences Utrecht",
-                "description": "HBO-ICT Software & Information Engineering (year 4 student)",
+                "name": "HU University of Applied Sciences Utrecht - Cum Laude",
+                "description": "HBO-ICT Software & Information Engineering",
                 "city": "Utrecht",
                 "from": 2016,
-                "to": 2019
+                "to": 2020
             },
             {
                 "name": "ROC A12",
@@ -35,6 +35,15 @@
         ],
         "workExperienceTitle": "Work experience",
         "workExperience": [
+            {
+                "name": "Itho Daalderop",
+                "city": "Tiel",
+                "from": 2020,
+                "to": 2020,
+                "duties": ["Intern"],
+                "activities": ["Solar panels and Self-consumption Graduation assignment"],
+                "techniques": ["React.JS", "Python", "Flask", "Docker", "scikit-learn"]
+            },
             {
                 "name": "Het Klokhuis (NTR)",
                 "city": "Hilversum",
