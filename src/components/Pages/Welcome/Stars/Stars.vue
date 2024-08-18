@@ -7,7 +7,7 @@
 <script>
 import isMobile from '../../../../helpers/isMobile';
 
-import Star from './Star';
+import Star from './Star.vue';
 
 export default {
     name: 'stars',

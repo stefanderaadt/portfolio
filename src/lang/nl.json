@@ -23,7 +23,7 @@
                 "description": "HBO-ICT Software & Information Engineering",
                 "city": "Utrecht",
                 "from": 2016,
-                "to": 2019
+                "to": 2020
             },
             {
                 "name": "ROC A12",
@@ -36,12 +36,19 @@
         "workExperienceTitle": "Werk ervaring",
         "workExperience": [
             {
+                "name": "Info Support",
+                "city": "Veenendaal",
+                "from": 2020,
+                "to": 2024,
+                "duties": ["Software Engineer", "DevOps Engineer"],
+                "techniques": [".NET Core", ".NET Framework", ".NET MAUI", "React.JS", "Redux", "Angular", "Vue", "Elastic Stack", "Azure DevOps", "Azure Portal", "Docker", "Kubernetes clusters", "Windows Server", "Ubuntu", "Oracle Linux"]
+            },
+            {
                 "name": "Itho Daalderop",
                 "city": "Tiel",
                 "from": 2020,
                 "to": 2020,
                 "duties": ["Stagiar"],
-                "activities": ["Zonnepanelen en Zelfconsumptie Afstudeeropdracht"],
                 "techniques": ["React.JS", "Python", "Flask", "Docker", "scikit-learn"]
             },
             {
@@ -50,7 +57,6 @@
                 "from": 2019,
                 "to": 2019,
                 "duties": ["Freelance ZZP Ontwikkelaar"],
-                "activities": ["Gamestudio"],
                 "techniques": ["React.JS", "Javascript ES6"]
             },
             {
@@ -80,7 +86,10 @@
         ],
         "languagesTitle": "Ervaring met de volgende talen",
         "languages": [
-            { "src": "img/languages/javascript_512.png", "name": "Javascript (ES6)" },
+            { "src": "img/languages/javascript_512.png", "name": "Javascript" },
+            { "src": "img/languages/csharp_net_512.png", "name": ".NET Core" },
+            { "src": "img/languages/bicep.png", "name": "Azure Bicep" },
+            { "src": "img/languages/yaml_512.png", "name": "YAML" },
             { "src": "img/languages/html_512.png", "name": "HTML5" },
             { "src": "img/languages/css_512.png", "name": "CSS3" },
             { "src": "img/languages/sass_512.png", "name": "SASS" },
@@ -88,28 +97,47 @@
             { "src": "img/languages/json_512.png", "name": "JSON" },
             { "src": "img/languages/node_512.png", "name": "NODE.JS" },
             { "src": "img/languages/php_512.png", "name": "PHP" },
-            { "src": "img/languages/ruby_512.png", "name": "Ruby" },
-            { "src": "img/languages/csharp_net_512.png", "name": "C# .Net" }
+            { "src": "img/languages/ruby_512.png", "name": "Ruby" }
         ],
         "frameworksTitle": "Ervaring met de volgende frameworks/tools",
         "frameworks": [
             { "src": "img/frameworks/react_512.png", "name": "React.JS" },
             { "src": "img/frameworks/vue_512.png", "name": "Vue.JS" },
-            { "src": "img/frameworks/git_512.png", "name": "Git" },
+            { "src": "img/frameworks/angular_512.png", "name": "Angular" },
+            { "src": "img/frameworks/maui.png", "name": ".NET MAUI" },
             { "src": "img/frameworks/docker_512.png", "name": "Docker" },
+            { "src": "img/frameworks/kubernetes.svg", "name": "Kubernetes" },
+            { "src": "img/frameworks/elastic_stack.png", "name": "Elastic Stack" },
             { "src": "img/frameworks/express_512.png", "name": "Express JS" },
             { "src": "img/frameworks/laravel_512.png", "name": "Laravel" },
             { "src": "img/frameworks/spring_512.png", "name": "Spring Framework" },
             { "src": "img/frameworks/unity_512.png", "name": "Unity" },
-            { "src": "img/frameworks/xamarin_512.png", "name": "Xamarin" },
             { "src": "img/frameworks/bootstrap_512.png", "name": "Bootstrap" },
             { "src": "img/frameworks/bulma_512.png", "name": "Bulma" },
-            { "src": "img/frameworks/ruby_on_rails_512.png", "name": "Ruby on Rails" }
+            { "src": "img/frameworks/ruby_on_rails_512.png", "name": "Ruby on Rails" },
+            { "src": "img/frameworks/git_512.png", "name": "Git" },
+            { "src": "img/frameworks/azure_512.png", "name": "Azure DevOps/Azure Portal" },
+            { "src": "img/frameworks/ubuntu.png", "name": "Ubuntu" },
+            { "src": "img/frameworks/oracle_linux.png", "name": "Oracle Linux" }
         ]
     },
     "projects": {
         "title": "Projecten",
         "projects": [
+            {
+                "name": "OVpay",
+                "techniques": [".NET Core", "Angular", "React.JS", ".NET MAUI", "Azure"],
+                "for": "Translink (via Info Support)",
+                "media": [
+                    { "type": "image", "src": "img/projects/ovpay/ovpay.png", "name": "OVpay screenshots" }
+                ],
+                "links": [{ "name": "OVpay app", "url": "https://www.ovpay.app/" }],
+                "description": [
+                    "OVpay is een van de verschillende projecten waarmee ik mij bezig heb gehouden tijdens mijn werk voor Info Support.",
+                    "In dit project ben ik ongeveer een jaar betrokken geweest bij de ontwikkeling van de MAUI app, Angular/React.JS front-ends en achterliggende .NET Core API's. Het meerdere passen component (zichtbaar aan de bovenkant van de pagina) heb ik bijvoorbeeld ontwikkeld. Hierdoor is het sinds een tijdje mogelijk om meer dan een pas toe te voegen aan je OVpay account (met een limiet die nu ingesteld staat op 10).",
+                    "Daarnaast heb ik ook meegedraait in de OPS diensten in het geval van storingen/problemen."
+                ]
+            },
             {
                 "name": "Klokhuis Game Studio",
                 "techniques": ["React.js", "Sass", "Javascript"],
@@ -136,24 +164,6 @@
                     "Bij deze opdracht heb ik de volgende onderdelen gemaakt: RGS Robot, RGS Mapper en de RGS Analyzer.",
                     "Deze RGS codes worden op een slimme manier gekoppeld aan grootboekrekeningen via de RGS Robot. Deze robot kan verder suggesties geven op basis van eerder gemaakte mappings van codes. Dankzij deze mappings kan een accountant al snel een goed overzicht krijgen over een administratie, en zijn deze regels ook te delen tussen andere administraties.",
                     "Dankzij deze opdracht heeft Minox als eerste het RGS Ready certificaat ontvangen. RGS Ready bewijst dat een softwarepakket RGS volledig ondersteunt."
-                ]
-            },
-            {
-                "name": "SmartLocker",
-                "techniques": ["Java", "Spring", "React.JS", "Redux"],
-                "for": "Lumiad & Hogeschool Utrecht",
-                "media": [
-                    { "type": "image", "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers pagina" },
-                    { "type": "image", "src": "img/projects/smartlocker/caregivers.png", "name": "Verzorgers pagina" },
-                    { "type": "image", "src": "img/projects/smartlocker/plannings.png", "name": "Planning pagina per verzorger" }
-                ],
-                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/SmartLocker" }],
-                "description": [
-                    "Een project voor de Hogeschool Utrecht en Lumiad waarbij een slim sleutelkastje is ontwikkeld. Bij dit kastje was het de bedoeling dat deze door een verzorger te openen was tijdens ingeplande uren. Deze check werd vervolgens aan de back-end kant uitgevoerd, en kon via de webapp worden ingepland.",
-                    "Bij dit project heb ik samen met een medestudent de back-end en front-end container ontwikkeld in combinatie met Docker.",
-                    "De back-end container is gebouwd in Java Spring via een Hexagonale architectuur, door deze architectuur is het makkelijk om volledig nieuwe ports toe te voegen zoals bijvoorbeeld een Graphql of Soap endpoint. Verder is het door deze architectuur ook makkelijk om componenten zoals het ORM te switchen omdat alles wordt aangeroepen via adapters.",
-                    "De front-end container is gemaakt met React.js en Redux, zodat we op een duidelijke manier state management was over de gehele front-end applicatie.",
-                    "In de Github repository is de source code te vinden, verder staat hier ook informatie over hoe het volledige project te draaien is via Docker en Docker compose."
                 ]
             },
             {

@@ -1,16 +1,14 @@
-import Vue from 'vue';
-
-import '@fortawesome/fontawesome-free/js/all';
+import { createApp } from 'vue';
 import 'es6-promise/auto';
+import VueScrollTo from 'vue-scrollto';
+import Vuex from 'vuex';
 
-import './plugins';
-import App from './components/App';
+import App from './components/App.vue';
 import store from './store';
-
 import './scss/main.scss';
 
-const vm = new Vue({
-    el: '#app',
-    render: h => h(App),
-    store
-});
+createApp(App)
+    .use(store)
+    .use(VueScrollTo, { offset: -75 }) // navbar height
+    .use(Vuex)
+    .mount('#app');

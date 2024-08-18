@@ -74,9 +74,9 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import TimeTable from './TimeTable';
-import Education from './Education';
-import WorkExperience from './WorkExperience';
+import TimeTable from './TimeTable.vue';
+import Education from './Education.vue';
+import WorkExperience from './WorkExperience.vue';
 
 export default {
     name: 'about-me',

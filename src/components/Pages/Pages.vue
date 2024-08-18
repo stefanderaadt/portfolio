@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Divider from './Divider';
-import Welcome from './Welcome/Welcome';
-import AboutMe from './AboutMe/AboutMe';
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
+import Divider from './Divider.vue';
+import Welcome from './Welcome/Welcome.vue';
+import AboutMe from './AboutMe/AboutMe.vue';
+import Projects from './Projects/Projects.vue';
+import Contact from './Contact/Contact.vue';
 
 export default {
     name: 'pages',

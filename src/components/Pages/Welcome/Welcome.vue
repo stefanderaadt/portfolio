@@ -21,8 +21,8 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import Meteors from './Meteors/Meteors';
-import Stars from './Stars/Stars';
+import Meteors from './Meteors/Meteors.vue';
+import Stars from './Stars/Stars.vue';
 
 export default {
     name: 'welcome',

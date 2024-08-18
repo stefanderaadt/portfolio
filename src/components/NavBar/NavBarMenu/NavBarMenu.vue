@@ -30,8 +30,8 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import NavBarItem from './NavBarItem';
-import NavBarLangPicker from './NavBarLangPicker';
+import NavBarItem from './NavBarItem.vue';
+import NavBarLangPicker from './NavBarLangPicker.vue';
 
 export default {
     name: 'nav-bar-menu',

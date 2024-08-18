@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import NavBarBrand from './NavBarBrand';
-import NavBarMenu from './NavBarMenu/NavBarMenu';
+import NavBarBrand from './NavBarBrand.vue';
+import NavBarMenu from './NavBarMenu/NavBarMenu.vue';
 
 export default {
     name: 'nav-bar',

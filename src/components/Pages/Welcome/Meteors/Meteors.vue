@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Meteor from './Meteor';
+import Meteor from './Meteor.vue';
 
 export default {
     name: 'meteors',

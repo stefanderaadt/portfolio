@@ -36,12 +36,19 @@
         "workExperienceTitle": "Work experience",
         "workExperience": [
             {
+                "name": "Info Support",
+                "city": "Veenendaal",
+                "from": 2020,
+                "to": 2024,
+                "duties": ["Software Engineer", "DevOps Engineer"],
+                "techniques": [".NET Core", ".NET Framework", ".NET MAUI", "React.JS", "Redux", "Angular", "Vue", "Elastic Stack", "Azure DevOps", "Azure Portal", "Docker", "Kubernetes clusters", "Windows Server", "Ubuntu", "Oracle Linux"]
+            },
+            {
                 "name": "Itho Daalderop",
                 "city": "Tiel",
                 "from": 2020,
                 "to": 2020,
                 "duties": ["Intern"],
-                "activities": ["Solar panels and Self-consumption Graduation assignment"],
                 "techniques": ["React.JS", "Python", "Flask", "Docker", "scikit-learn"]
             },
             {
@@ -79,7 +86,10 @@
         ],
         "languagesTitle": "Experience with the following languages",
         "languages": [
-            { "src": "img/languages/javascript_512.png", "name": "Javascript (ES6)" },
+            { "src": "img/languages/javascript_512.png", "name": "Javascript" },
+            { "src": "img/languages/csharp_net_512.png", "name": ".NET Core" },
+            { "src": "img/languages/bicep.png", "name": "Azure Bicep" },
+            { "src": "img/languages/yaml_512.png", "name": "YAML" },
             { "src": "img/languages/html_512.png", "name": "HTML5" },
             { "src": "img/languages/css_512.png", "name": "CSS3" },
             { "src": "img/languages/sass_512.png", "name": "SASS" },
@@ -87,28 +97,47 @@
             { "src": "img/languages/json_512.png", "name": "JSON" },
             { "src": "img/languages/node_512.png", "name": "NODE.JS" },
             { "src": "img/languages/php_512.png", "name": "PHP" },
-            { "src": "img/languages/ruby_512.png", "name": "Ruby" },
-            { "src": "img/languages/csharp_net_512.png", "name": "C# .Net" }
+            { "src": "img/languages/ruby_512.png", "name": "Ruby" }
         ],
         "frameworksTitle": "Experience with the following frameworks/tools",
         "frameworks": [
             { "src": "img/frameworks/react_512.png", "name": "React.JS" },
             { "src": "img/frameworks/vue_512.png", "name": "Vue.JS" },
-            { "src": "img/frameworks/git_512.png", "name": "Git" },
+            { "src": "img/frameworks/angular_512.png", "name": "Angular" },
+            { "src": "img/frameworks/maui.png", "name": ".NET MAUI" },
             { "src": "img/frameworks/docker_512.png", "name": "Docker" },
+            { "src": "img/frameworks/kubernetes.svg", "name": "Kubernetes" },
+            { "src": "img/frameworks/elastic_stack.png", "name": "Elastic Stack" },
             { "src": "img/frameworks/express_512.png", "name": "Express JS" },
             { "src": "img/frameworks/laravel_512.png", "name": "Laravel" },
             { "src": "img/frameworks/spring_512.png", "name": "Spring Framework" },
             { "src": "img/frameworks/unity_512.png", "name": "Unity" },
-            { "src": "img/frameworks/xamarin_512.png", "name": "Xamarin" },
             { "src": "img/frameworks/bootstrap_512.png", "name": "Bootstrap" },
             { "src": "img/frameworks/bulma_512.png", "name": "Bulma" },
-            { "src": "img/frameworks/ruby_on_rails_512.png", "name": "Ruby on Rails" }
+            { "src": "img/frameworks/ruby_on_rails_512.png", "name": "Ruby on Rails" },
+            { "src": "img/frameworks/git_512.png", "name": "Git" },
+            { "src": "img/frameworks/azure_512.png", "name": "Azure DevOps/Azure Portal" },
+            { "src": "img/frameworks/ubuntu.png", "name": "Ubuntu" },
+            { "src": "img/frameworks/oracle_linux.png", "name": "Oracle Linux" }
         ]
     },
     "projects": {
         "title": "Projects",
         "projects": [
+            {
+                "name": "OVpay",
+                "techniques": [".NET Core", "Angular", "React.JS", ".NET MAUI", "Azure"],
+                "for": "Translink (through Info Support)",
+                "media": [
+                    { "type": "image", "src": "img/projects/ovpay/ovpay.png", "name": "OVpay screenshots" }
+                ],
+                "links": [{ "name": "OVpay app", "url": "https://www.ovpay.app/" }],
+                "description": [
+                    "OVpay is one of several projects I have been involved with while working for Info Support.",
+                    "In this project, I was involved with the development of the MAUI app, Angular/React.JS front-ends and back-end .NET Core APIs. I developed the multiple cards component (visible at the top of the page), for example. This has made it possible to add more than one card to your OVpay account (with a current limit of 10).",
+                    "In addition I also participated in the OPS shifts in case of failures."
+                ]
+            },
             {
                 "name": "Klokhuis Game Studio",
                 "techniques": ["React.js", "Sass", "Javascript"],
@@ -135,24 +164,6 @@
                     "For this assignment I made the following parts: RGS Robot, RGS Mapper and the RGS Analyzer.",
                     "These RGS codes are cleverly linked to general ledger accounts with the RGS Robot. This robot can also give suggestions based on previously made mappings of codes. Thanks to these mappings, an accountant can quickly get a good overview of an administration, and these rules can also be shared between other administrations.",
                     "Thanks to this assignment, Minox was the first company to receive the RGS Ready certificate. RGS Ready proves that a software package fully supports RGS."
-                ]
-            },
-            {
-                "name": "SmartLocker",
-                "techniques": ["Java", "Spring", "React.JS", "Redux"],
-                "for": "HU University of Applied Sciences Utrecht & Lumiad",
-                "media": [
-                    { "type": "image", "src": "img/projects/smartlocker/smartlockers.png", "name": "SmartLockers pagina" },
-                    { "type": "image", "src": "img/projects/smartlocker/caregivers.png", "name": "Verzorgers pagina" },
-                    { "type": "image", "src": "img/projects/smartlocker/plannings.png", "name": "Planning pagina per verzorger" }
-                ],
-                "links": [{ "name": "Github repository", "url": "https://github.com/stefanderaadt/SmartLocker" }],
-                "description": [
-                    "A project for the HU University of Applied Sciences Utrecht and Lumiad in which a smart key cabinet has been developed. The idea was that a caregiver could open the locker with a card during scheduled hours. This check was then carried out on the back-end side, and could be planned in the web app.",
-                    "In this project, together with a fellow student, I developed the back-end and front-end container in combination with Docker.",
-                    "The back-end container was built in Java Spring using a Hexagonal architecture. This architecture makes it easy to add completely new ports, such as a Graphql or a Soap endpoint. Furthermore, this architecture also makes it easy to switch components such as the ORM because everything is called through adapters.",
-                    "The front-end container is made with React.js and Redux, so we had clear state management system over the entire front-end application.",
-                    "In the Github repository you can find our source code. On this repository there is also a guide available on how to run the project on your local machine."
                 ]
             },
             {

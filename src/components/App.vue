@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import NavBar from './NavBar/NavBar';
-import Pages from './Pages/Pages';
+import NavBar from './NavBar/NavBar.vue';
+import Pages from './Pages/Pages.vue';
 
 export default {
     name: 'app',

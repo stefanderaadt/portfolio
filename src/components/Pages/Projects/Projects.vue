@@ -68,7 +68,7 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import MediaSlider from './MediaSlider';
+import MediaSlider from './MediaSlider.vue';
 
 export default {
     name: 'projects',

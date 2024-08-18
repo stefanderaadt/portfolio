@@ -2,52 +2,24 @@
     "name": "portfolio-stefan",
     "version": "0.0.1",
     "description": "Portfolio developed in Vue.js",
-    "main": "index.js",
     "scripts": {
-        "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --progress",
-        "staging": "cross-env NODE_ENV=staging webpack",
-        "build": "cross-env NODE_ENV=production webpack"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.10.1",
-        "bulma": "^0.7.5",
+        "bulma": "^0.9.4",
         "es6-promise": "^4.2.8",
-        "vue": "^2.6.10",
-        "vue-router": "^3.1.2",
-        "vue-scrollto": "^2.15.0",
-        "vuex": "^3.1.1"
+        "vue": "^3.4.37",
+        "vue-scrollto": "^2.20.0",
+        "vuex": "^4.1.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.5.5",
-        "@babel/plugin-proposal-class-properties": "^7.5.5",
-        "@babel/plugin-proposal-decorators": "^7.4.4",
-        "@babel/plugin-proposal-json-strings": "^7.2.0",
-        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-        "@babel/plugin-syntax-import-meta": "^7.2.0",
-        "@babel/preset-env": "^7.5.5",
-        "babel-loader": "^8.0.6",
-        "compression-webpack-plugin": "^3.0.0",
-        "copy-webpack-plugin": "^5.0.4",
-        "cross-env": "^5.2.0",
-        "css-loader": "^3.2.0",
-        "file-loader": "^4.2.0",
-        "html-webpack-plugin": "^3.2.0",
-        "mini-css-extract-plugin": "^0.7.0",
-        "node-sass": "^4.12.0",
-        "optimize-css-assets-webpack-plugin": "^5.0.3",
-        "sass-loader": "^7.2.0",
-        "uglifyjs-webpack-plugin": "^2.2.0",
-        "url-loader": "^2.1.0",
-        "vue-loader": "^15.7.1",
-        "vue-style-loader": "^4.1.2",
-        "vue-template-compiler": "^2.6.10",
-        "webpack": "^4.39.1",
-        "webpack-bundle-analyzer": "^3.4.1",
-        "webpack-cli": "^3.3.6",
-        "webpack-dev-server": "^3.8.0",
-        "webpack-hot-middleware": "^2.25.0",
-        "webpack-merge": "^4.2.1"
+        "@vitejs/plugin-vue": "^5.1.2",
+        "sass-embedded": "^1.77.8",
+        "vite": "^5.4.0",
+        "vite-plugin-node-polyfills": "^0.22.0"
     }
 }
